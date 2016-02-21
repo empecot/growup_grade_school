@@ -1,42 +1,44 @@
 content {
-  width: 960px;
+  width: 1200px;
   display: inline;
   margin-left: auto;
   margin-right: auto;
   background: white;
-  padding:50px;
+  padding:20px;
   margin-top: 0px;
+  position: absolute;
+}
+h2 {
+	float: left;
+	font-size: 30px;
+	color: #cc0033;
+	font-family: 'Coming Soon', cursive;
+	margin-top: 45px;
+	position: relative;
+	left: 200px;
 }
 .searchbox {
-	float: left;
-	margin-top: 30px;
-	margin-left: 150px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 100px;
+	margin-bottom: 30px;
 }
 	input {
 		width: 300px;
-		height: 35px;
+		height: 25px;
 		border-style: solid;
 		border-color: #cccccc;
 		background-color: #e6e6e6;
 		display: inline-block;
 }
 	button {
-		font-family: 'Coming Soon', cursive;
+		width: 75px;
 		font-size: 20px;
 		color: #cc0033;
-		width: 75px;
+		font-family: 'Coming Soon', cursive !important;
 		border-style: solid;
-		border-color: #cccccc;
-		background-color: #e6e6e6;
-}
-h2 {
-	font-size: 30px;
-	color: #cc0033;
-	font-family: 'Coming Soon', cursive;
-	margin-top: 55px;
-	position: relative;
-	left: 450px;
-	display: inline-block;
+		border-color: white;
+		background-color: white;
 }
 
 #logo {
@@ -116,21 +118,20 @@ h2 {
 	float: left;
 	position: relative;
 	top: -275px;
-	left: 125px;
+	left: 100px;
 }
-
 .history img {
 	width: 225px;
 	float: left;
 	position: relative;
 	bottom: 130px;
-	right: 60px;
+	right: 80px;
 }
 .arts img {
 	width: 125px;
 	height: auto;
 	position: relative;
-	right: 190px;
+	right: 210px;
 	top: 50px;
 	float: left;
 }
@@ -139,8 +140,8 @@ h2 {
 	height: auto;
 	float: right;
 	position: relative;
-	top: -283px;
-	right: 93px;
+	top: -287px;
+	right: 30px;
 }
 .math img {
 	width: 225px;
@@ -148,26 +149,28 @@ h2 {
 	float: right;
 	position: relative;
 	bottom: 130px;
-	left: 140px;
+	left: 200px;
 }
 .more img {
 	width: 125px;
 	height: auto;
 	position: relative;
-	top: 50px;
-	left: 270px;
+	top: 40px;
+	left: 330px;
 	float: right;
 }
 .tagline {
 	font-family: 'Book Antiqua', times;
 	font-size: 40px;
-	color: #737373;
+	color: #5B6166;
 	position: absolute;
-	bottom: 55px;
+	bottom: 0px;
 	left: 355px;
 	display: inline-block;
 }
 span img {
 	width: 225px;
 	height: auto;
+	position: relative;
+	top: 5px;
 }

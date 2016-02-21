@@ -1,53 +1,173 @@
-input {
-	width: 300px;
-	height: 35px;
-	border-style: solid;
-	border-color: #cccccc;
-	background-color: #e6e6e6;
-}
-button {
-	font-size: 20px;
-	color: #cc0033;
-	font-family: 'Coming Soon', cursive;
-	width: 75px;
-	border-style: solid;
-	border-color: #cccccc;
-	background-color: #e6e6e6;
+content {
+  width: 960px;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding:50px;
+  margin-top: 0px;
 }
 .searchbox {
 	float: left;
-	margin-top: 40px;
-	margin-left: 70px;
+	margin-top: 30px;
+	margin-left: 150px;
+}
+	input {
+		width: 300px;
+		height: 35px;
+		border-style: solid;
+		border-color: #cccccc;
+		background-color: #e6e6e6;
+		display: inline-block;
+}
+	button {
+		font-family: 'Coming Soon', cursive;
+		font-size: 20px;
+		color: #cc0033;
+		width: 75px;
+		border-style: solid;
+		border-color: #cccccc;
+		background-color: #e6e6e6;
 }
 h2 {
-	float: right;
 	font-size: 30px;
 	color: #cc0033;
 	font-family: 'Coming Soon', cursive;
-	margin-top: 30px;
-	margin-right: 200px;
+	margin-top: 55px;
+	position: relative;
+	left: 450px;
+	display: inline-block;
 }
+
 #logo {
 	width: 400px;
 	height: auto;
-	margin-left: 40%;
-	margin-top: 150px;
+	margin-left: 37%;
+	position: relative;
+	top: 50px;
+	display: block;
 }
-#back_to_school {
-	font-family: 'Coming Soon', cursive;
-	font-size: 50px;
-}
-.pencil {
-	width: 50px;
+.pencil img {
+	width: 250px;
 	height: auto;
+	display: block;
 }
-./*science {
-	width: 25px;
+	#pencil1 img {
+		position: absolute;
+		top: 165px;
+		left: 245px;
+		-webkit-transform: rotate(20deg);
+	    -moz-transform: rotate(20deg);
+	    -ms-transform: rotate(20deg);
+	    -o-transform: rotate(20deg);
+	    transform: rotate(20deg);
+	}
+	#pencil2 img {
+		position: absolute;
+		top: 275px;
+		left: 245px;
+	}
+	#pencil3 img {
+		position: absolute;
+		top: 375px;
+		left: 280px;
+		-webkit-transform: rotate(-20deg);
+	    -moz-transform: rotate(-20deg);
+	    -ms-transform: rotate(-20deg);
+	    -o-transform: rotate(-20deg);
+	    transform: rotate(-20deg);
+	}
+	#pencil4 img {
+		position: absolute;
+		top: 170px;
+		left: 765px;
+	    -webkit-transform: rotate(160deg);
+	    -moz-transform: rotate(160deg);
+	    -ms-transform: rotate(160deg);
+	    -o-transform: rotate(160deg);
+	    transform: rotate(160deg);
+	}
+	#pencil5 img {
+		position: absolute;
+		top: 275px;
+		left: 762px;
+	    -webkit-transform: rotate(180deg);
+	    -moz-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	    -o-transform: rotate(180deg);
+	    transform: rotate(180deg);
+	}
+	#pencil6 img {
+		position: absolute;
+		top: 375px;
+		left: 730px;
+	    -webkit-transform: rotate(200deg);
+	    -moz-transform: rotate(200deg);
+	    -ms-transform: rotate(200deg);
+	    -o-transform: rotate(200deg);
+	    transform: rotate(200deg);
+	}
+.subject_title {
+	display: none;
+}
+.science img {
+	width: 125px;
 	height: auto;
 	float: left;
-}*/
-/*.more {
-	width: 20px;
-	height: auto;
+	position: relative;
+	top: -275px;
+	left: 125px;
+}
+
+.history img {
+	width: 225px;
 	float: left;
-}*/
+	position: relative;
+	bottom: 130px;
+	right: 60px;
+}
+.arts img {
+	width: 125px;
+	height: auto;
+	position: relative;
+	right: 190px;
+	top: 50px;
+	float: left;
+}
+.english img {
+	width: 225px;
+	height: auto;
+	float: right;
+	position: relative;
+	top: -283px;
+	right: 93px;
+}
+.math img {
+	width: 225px;
+	height: auto;
+	float: right;
+	position: relative;
+	bottom: 130px;
+	left: 140px;
+}
+.more img {
+	width: 125px;
+	height: auto;
+	position: relative;
+	top: 50px;
+	left: 270px;
+	float: right;
+}
+.tagline {
+	font-family: 'Book Antiqua', times;
+	font-size: 40px;
+	color: #737373;
+	position: absolute;
+	bottom: 55px;
+	left: 355px;
+	display: inline-block;
+}
+span img {
+	width: 225px;
+	height: auto;
+}

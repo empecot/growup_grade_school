@@ -30,10 +30,10 @@
 .fl {
   float: left;
 }
-@import url("../fonts/hello.myfonts.net/count/30843a");
+@import url("fonts/webfonts/hello.myfonts.net/count/30843a");
 
   
-@font-face {font-family: 'Drawzing';src: url('webfonts/30843A_0_0.eot');src: url('webfonts/30843A_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30843A_0_0.woff2') format('woff2'),url('webfonts/30843A_0_0.woff') format('woff'),url('webfonts/30843A_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Drawzing';src: url('../fonts/webfonts/30843A_0_0.eot');src: url('../fonts/webfonts/30843A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/30843A_0_0.woff2') format('woff2'),url('../fonts/webfonts/30843A_0_0.woff') format('woff'),url('../fonts/webfonts/30843A_0_0.ttf') format('truetype');}
  
 /******************************************
 /* ADDITIONAL STYLES
@@ -51,6 +51,7 @@
   background: white;
   padding:20px;
   margin-top: 0px;
+  margin-bottom: 5em;
   position: absolute;
 }
 .about {
@@ -218,7 +219,7 @@ h2 {
 	font-size: 40px;
 	color: #5B6166;
 	position: absolute;
-	top: 22%;
+	top: 13em;
 	left: 30%;
 	display: inline-block;
 }
@@ -232,10 +233,17 @@ span img {
 /******************************************/
 /*ABOUT PAGE (JAVASCRIPT SCROLL DOWN ON CLICK "ABOUT"*/
 /******************************************/
-
-.bio_bg_image {
+.about_page {
+	margin-top: 25em;
+	width: 1200px;
+	height: 900px;
+}
+.notepad {
+	background-image: url("../images/bio_notepad.jpg");
 	width: 100%;
 	height: auto;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 .profile_pic {
 	width: 20%;
@@ -257,7 +265,8 @@ span img {
     line-height: 1.5em;
   }
  .about_nav {
- 	position: relative;
+ 	/*position: relative;
+ 	z-index: 10;*/
  }
 
 /******************************************/
@@ -265,9 +274,17 @@ span img {
 /******************************************/
 nav {
   width: 100%;
-  height: 10%; 
- /* position: fixed;*/
+  height: 18%; 
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
 }
+
+.navAboutTest {
+	width: 100%;
+  	height: 10%; 
+}
+
 nav img {
 	width: 100%;
 	height: auto;
@@ -281,14 +298,15 @@ nav img {
 		.nav_searchbox {
 			display: inline-block;
 			position: absolute;
-			top: 100px;
-			left: 150px;
+			top: 70px;
+    		left: 140px;
 		}
 		.subjects_nav {
 			float: right;
 			display: inline-block;
 			position: relative;
-			bottom: 85px;
+			bottom: 90px;
+    		right: 3em;
 		}
 		.science_nav {
 			width: 75px;
@@ -326,55 +344,77 @@ nav img {
 /******************************************/
 
 .history_main {
-	width: 960px;
+	width: 1200px;
 	height: 450px;
+	margin-bottom: 20em;
 }
 	.chalkboard {
-		width: 960px;
+		width: 100%;
 		height: 450px;
 		text-align: center;
 		position: relative;
-		left: 5em;
-		bottom: 5.2em;
+		left: 2em;
+		top: 27%;
 		font-family: 'Drawzing';
 		color: rgba(0, 0, 0, 0.5);
+		margin-bottom: 25em;
 	}
-	h1 {
+
+	.history_head {
 		color: #f4f4f0;
-		font-weight: regular;
+		font-weight: normal;
 		font-size: 8em;
 	    margin: 0.67em 0;
-	    position: relative;
-	    bottom: 4em;
-	    left: .5em;
+	    position: absolute;
+	    top: .3em;
+    	left: 2.5em;
 	    letter-spacing: .1em;		
 	}
+
 	.us_history_button {
 		font-size: 45px;
 	    color: #f4f4f0;
-	    position: relative;
-	    bottom: 13em;
-	    left: 26%;
+	    position: absolute;
+	    top: 7em;
+    	left: 5.5em;
 	    float: left;
 	}
 	.world_history_button {
 		font-size: 45px;
 		color: #f4f4f0;
-	    position: relative;
-	    bottom: 13em;
-	    right: 15%;
+	    position: absolute;
+	    top: 7em;
+    	right: 6em;
 	    float: right;
 	}
-
+/*
 .ushistory_main {
-	position: relative;
+	background-image: url("../images/chalkboard.jpg");
+	background-repeat: no-repeat;
+	background-size: 98%;
+	height: 550px;
+    margin-bottom: 10em;
+    margin-left: 7.6%;
+    z-index: -1;
+}*/
+.us_chalk {
+	width: 60%;
+	height: auto;
+	z-index: 2;
 }
 
 .worldhistory_main {
-	position: relative;
-	top: 100%;
+	background-image: url("../images/chalkboard.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 550px;
+    margin-bottom: 10em;
+    margin-left: 7.6%;
 }
-
+.world_chalk {
+	width: 5em;
+	height: auto;
+}
 
 /******************************************/
 /*CIVIL WAR PAGE*/
@@ -390,30 +430,16 @@ nav img {
 .history_directory {
 	display: inline-flex;
     position: absolute;
-    top: 70%;
+    top: 55%;
     color: #cc0033;
     font-family: 'Coming Soon', cursive;
     font-size: 1.3em;
     list-style: none;
     letter-spacing: .08em;
 }
-.civil_war_aside {
-	width: 20%;
-    height: 500px;
-    border: 1px solid #4A4A49;
-    font-family: 'Book Antiqua', times;
-    color: #4A4A49;
-    text-align: center;
-    float: right;
-}
-.aside_head {
-	text-transform: uppercase;
-    text-decoration: underline;
-    font-weight: bold;
-}
+
 .civil_war_main {
 	float: left;
-	position: relative;
 	width: 70%;
 }
 .civil_war_header {
@@ -429,6 +455,31 @@ nav img {
 	font-family: 'Times New Roman', times;
     font-weight: normal;
     color: #4A4A49;
-    font-size: .5em;
+    font-size: 1em;
     line-height: 1.3em;
+}
+.key_events h4 {
+	font-weight: bold;
+	font-size: 2em;
+}
+.civil_war_aside {
+	width: 25%;
+    height: 1000px;
+    border: 1px solid #4A4A49;
+    font-family: 'Book Antiqua', times;
+    color: #4A4A49;
+    text-align: center;
+    float: right;
+    overflow: hidden;
+}
+.aside_head {
+	text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.civil_war_aside_list {
+	text-align: left;
+}
+.cv_dates {
+	font-weight: bold;
 }

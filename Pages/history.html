@@ -6,6 +6,7 @@
 <meta name="author" content="Emily Pecot">
 <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Rubik:400,500' rel='stylesheet' type='text/css'>
 
 <link type="text/css" rel="stylesheet" href="../css/style.css"/>
 
@@ -13,8 +14,7 @@
 
 <body class="body_home">
 
-<nav>
-	
+<nav class="main_nav">	
 	<div class="logo_home"><a href="../index.html"><img src="../images/grownup-gradeschoollogo smaller.jpg"></a></div>
 	
 	<div class="searchbox">
@@ -38,7 +38,7 @@
 			<div class="subject_title">ARTS</div>
 		</div>
 		<div class="english_nav">
-			<a href="#"><img src="../images/english.jpg"></a>
+			<a href="#"><img src="../images/english.png"></a>
 			<div class="subject_title">ENGLISH</div>
 		</div>
 		<div class="math_nav">
@@ -75,24 +75,33 @@
 /*US HISTORY*/
 /******************************************/ -->
 
+<!-- Need to adjust this link --><div id="ushistorylink"></div>
 <div class="ushistory_main">
-		<div class="chalkboard">
- 			<img class="us_chalk" ="../images/us_chalk.jpg">
- 		</div>
+ 			<img class="us_map" src="../images/klett_beginners_us_map_lg.jpg">
+ 				<div class="us_history_body">
+ 					<h1 class="us_history_header">US HISTORY</h1>
+ 					<div class="us-history_menu">
+ 				</div>
 </div>
+ 			<!-- create arrays with for loops for the following: 
+ 			wars, historical eras, centuries,  -->
+
 
 <!-- /******************************************/
 /*WORLD HISTORY*/
 /******************************************/ -->
 
 <div class="worldhistory_main">
-		<div class="chalkboard_world">
- 			<img class="world_chalk" ="../images/chalk_world.jpg">
- 		</div>
+ 			<img class="world_map" src="../images/klett_world_political_lg.jpg">
+				<div class="world_history_body">
+ 					<h1 class="world_history_header">
+ 					WORLD HISTORY</h1>
+ 					<div class="world-history_menu">
+ 				</div>
 </div>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
-	<script src="scripts/main.js"></script>
+	<script src="../scripts/main.js"></script>
 </body>
 </html>

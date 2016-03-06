@@ -51,7 +51,7 @@
   background: white;
   padding:20px;
   margin-top: 0px;
-  margin-bottom: 5em;
+  /*margin-bottom: 5em;*/
   position: absolute;
 }
 .about {
@@ -85,6 +85,7 @@ h2 {
 		border-color: #cccccc;
 		background-color: #e6e6e6;
 		display: inline-block;
+		font-family: 'Book Antiqua', times;
 	}
 	button {
 		width: 75px;
@@ -231,26 +232,49 @@ span img {
 }
 
 /******************************************/
-/*ABOUT PAGE (JAVASCRIPT SCROLL DOWN ON CLICK "ABOUT"*/
+/*ABOUT PAGE
 /******************************************/
 .about_page {
-	margin-top: 25em;
 	width: 1200px;
 	height: 900px;
 }
+
+/******************************************/
+/*NAV FOR ABOUT PAGE ONLY*/
+/******************************************/
+
+.about_nav {
+	position: relative;
+	top: 56em;
+	z-index: 9999;
+}
+.about_logo {
+	position: relative;
+	right: 23em;
+	top: .5em;
+}
 .notepad {
-	background-image: url("../images/bio_notepad.jpg");
+	background: url("../images/bio_notepad.jpg") center center no-repeat;
 	width: 100%;
-	height: auto;
-	background-position: center center;
-	background-repeat: no-repeat;
+	height: 750px;
+	background-size: cover;
+	position: relative;
+    top: 20%;
+}
+.blackborder {
+	width: 230px;
+	height: 297px;
+	background-color: black;
+	position: absolute;
+    top: 14.5em;
+    left: 17em;
 }
 .profile_pic {
 	width: 20%;
 	height: auto;
 	position: absolute;
-	bottom: 12.5%;
-	left: 24%;
+    top: .95em;
+    left: .96em;
 }
 .bio {
     width: 23%;
@@ -258,33 +282,23 @@ span img {
     font-family: 'Annie Use Your Telescope', serif;
     font-size: 1em;
     color: #454343;
-    left: 53%;
+    left: 54%;
     position: absolute;
-    bottom: -11.4%;
-    z-index: 100%;
+    bottom: 37.3%;
     line-height: 1.5em;
   }
- .about_nav {
- 	/*position: relative;
- 	z-index: 10;*/
- }
+
 
 /******************************************/
 /*NAV FOR ALL PAGES EXCEPT HOME PAGE*/
 /******************************************/
-nav {
+.main_nav {
   width: 100%;
   height: 18%; 
   position: fixed;
-  z-index: 9999;
   background-color: white;
+  z-index: 9999;
 }
-
-.navAboutTest {
-	width: 100%;
-  	height: 10%; 
-}
-
 nav img {
 	width: 100%;
 	height: auto;
@@ -387,34 +401,70 @@ nav img {
     	right: 6em;
 	    float: right;
 	}
-/*
+
 .ushistory_main {
-	background-image: url("../images/chalkboard.jpg");
-	background-repeat: no-repeat;
-	background-size: 98%;
-	height: 550px;
-    margin-bottom: 10em;
-    margin-left: 7.6%;
-    z-index: -1;
-}*/
-.us_chalk {
-	width: 60%;
-	height: auto;
-	z-index: 2;
+	width: 100%;
+	height: 500px;
+	margin-bottom: 20em;
 }
 
+	.us_map {
+		width: 70%;
+		height: 500px;
+	}
+	.us_history_body {
+		width: 25%;
+		height: 80%;
+		background-color: black;
+		border:2px solid black;
+		outline:2px #fff solid;
+		outline-offset:-6px;
+		color: white;
+		font-family: 'Rubik', sans-serif;
+		float: right;
+		margin-top: 2.5em;
+		margin-right: 2em;	
+	}
+
+	.us_history_header {
+		text-align: center;
+		font-weight: 500;
+	}
+	.us_history_menu {
+
+	}
+
 .worldhistory_main {
-	background-image: url("../images/chalkboard.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 550px;
-    margin-bottom: 10em;
-    margin-left: 7.6%;
+	width: 100%;
+	height: 500px;
+	margin-top: 10em;
 }
-.world_chalk {
-	width: 5em;
-	height: auto;
-}
+		.world_map {
+		width: 65%;
+		height: 500px;
+		float: right;
+		}
+		.world_history_body {
+			width: 25%;
+			height: 80%;
+			background-color: black;
+			border:2px solid black;
+			outline:2px #fff solid;
+			outline-offset:-6px;
+			color: white;
+			font-family: 'Rubik', sans-serif;
+			float: left;
+			margin-top: 3.5em;
+			margin-left: 4em;	
+		}
+
+		.world_history_header {
+			text-align: center;
+			font-weight: 500;
+		}
+		.world_history_menu {
+
+		}
 
 /******************************************/
 /*CIVIL WAR PAGE*/
@@ -430,7 +480,7 @@ nav img {
 .history_directory {
 	display: inline-flex;
     position: absolute;
-    top: 55%;
+    top: 27%;
     color: #cc0033;
     font-family: 'Coming Soon', cursive;
     font-size: 1.3em;
@@ -450,13 +500,55 @@ nav img {
     text-transform: uppercase;
     line-height: .5em;
     letter-spacing: 0;
+    position: absolute;
+    top: 6.8em;
+    margin-left: .8em;
 }
 .civil_war_body {
 	font-family: 'Times New Roman', times;
     font-weight: normal;
     color: #4A4A49;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1.3em;
+    position: relative;
+    top: 14em;
+    margin-left: 1.3em;
+}
+.ft_sumter {
+	width: 45%;
+	height: auto;
+	float: right;
+	border: solid 5px #4A4A49;
+}	
+.ft_henry {
+	width: 40%;
+	height: auto;
+	float: left;
+	border: solid 5px #4A4A49;
+	margin-right: 1em;
+}
+.strategy_map {
+	width: 40%;
+	height: auto;
+	float: right;
+	border: solid 5px #4A4A49;
+	margin-right: 1em;
+}
+.antietam {
+	width: 40%;
+	height: auto;
+	float: left;
+	border: solid 5px #4A4A49;
+	margin-right: 1em;
+}
+.lincoln {
+	width: 37%;
+	height: auto;
+	float: right;
+	border: solid 5px #4A4A49;
+	margin-left: 1em;
+	margin-top: -1.5em;
+}
 }
 .key_events h4 {
 	font-weight: bold;
@@ -464,13 +556,15 @@ nav img {
 }
 .civil_war_aside {
 	width: 25%;
-    height: 1000px;
+    height: 800px;
     border: 1px solid #4A4A49;
     font-family: 'Book Antiqua', times;
     color: #4A4A49;
     text-align: center;
     float: right;
     overflow: hidden;
+    position: relative;
+    top: 18em;
 }
 .aside_head {
 	text-transform: uppercase;

@@ -59,9 +59,10 @@
 	color: #cc0033;
 	margin-top: 40px;
 }
-a:hover {
+.about:hover {
 	color: black;
 }
+
 h2 {
 	text-decoration: none;
 	float: left;
@@ -93,10 +94,12 @@ h2 {
 		color: #cc0033;
 		font-family: 'Coming Soon', cursive !important;
 		border-style: solid;
-		border-color: white;
-		background-color: white;
+		border-color: transparent;
+		background-color: transparent;
 	}
-
+	button:hover {
+		color: black;
+	}
 #logo {
 	width: 24%;
 	height: auto;
@@ -165,9 +168,26 @@ h2 {
 	    -o-transform: rotate(200deg);
 	    transform: rotate(200deg);
 	}
+
+.icons:hover {
+	opacity: .2
+}
 .subject_title {
 	display: none;
 }
+/*span.subject_title {
+	display: none;
+	color: black;
+	font-family: 'Book Antiqua', times;
+	font-size: 1em;
+	text-decoration: none;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+}
+.icons:hover span.subject_title {
+	display: table-cell;
+}*/
 .science img {
 	width: 125px;
 	height: auto;
@@ -245,7 +265,7 @@ span img {
 
 .about_nav {
 	position: relative;
-	top: 56em;
+	top: 56.5em;
 	z-index: 9999;
 }
 .about_logo {
@@ -422,16 +442,38 @@ nav img {
 		color: white;
 		font-family: 'Rubik', sans-serif;
 		float: right;
-		margin-top: 2.5em;
+		margin-top: 3em;
 		margin-right: 2em;	
 	}
-
 	.us_history_header {
 		text-align: center;
 		font-weight: 500;
 	}
-	.us_history_menu {
-
+	.eras_menu,
+	.wars_menu,
+	.presidents_menu {
+		margin-left: 1.5em;
+  		padding-top: 2em;		
+	}
+	/*trying to change bg color and text color of dropdowns*/
+	/*#wars,
+	#eras,
+	#presidents {
+		background-color: black;
+  		color: white;
+  		/*border-radius: 0;*/
+	#era_name,
+	#war_name,
+	#president_name {
+		color: white;
+		border: solid, black, 2px;
+		background-color: black;
+		font-family: 'Rubik', sans-serif;
+		font-size: 1.2em;
+		display: inline-block;
+		text-align: middle;
+		vertical-align: middle;
+		width: 13em;
 	}
 
 .worldhistory_main {
@@ -462,9 +504,35 @@ nav img {
 			text-align: center;
 			font-weight: 500;
 		}
-		.world_history_menu {
+		
+		.world_eras_menu,
+		.regions_menu,
+		.modern_history_menu {
+		margin-left: 1.5em;
+  		padding-top: 2em;	
+	}
+	/*trying to change bg color and text color of dropdowns*/
+	/*#world_eras,
+	#regions,
+	#modern_history {
+		background-color: black;
+  		color: white;
+  		/*border-radius: 0;*/
 
-		}
+		#world_era_name,
+		#region_name,
+		#modern_history_category {
+		color: white;
+		border: solid, black, 2px;
+		background-color: black;
+		font-family: 'Rubik', sans-serif;
+		font-size: 1.2em;
+		display: inline-block;
+		text-align: middle;
+		vertical-align: middle;
+		width: 13em;
+	}
+
 
 /******************************************/
 /*CIVIL WAR PAGE*/

@@ -81,21 +81,24 @@ h2 {
 
 	input {
 		width: 300px;
-		height: 25px;
-		border-style: solid;
-		border-color: #cccccc;
+		height: 32px;
 		background-color: #e6e6e6;
 		display: inline-block;
 		font-family: 'Book Antiqua', times;
+		border: 1.5px solid #cc0033;
+		position: relative;
+    	bottom: 6px;
+   		text-align: center;
 	}
 	button {
-		width: 75px;
+		width: 100px;
+		height: 36px;
 		font-size: 25px !important;
 		color: #cc0033;
 		font-family: 'Coming Soon', cursive !important;
-		border-style: solid;
-		border-color: transparent;
-		background-color: transparent;
+		border: 1px solid #cc0033;;
+		background-color: #e6e6e6;
+
 	}
 	button:hover {
 		color: black;

@@ -10,10 +10,6 @@
      box-sizing: border-box; /* IE */
 }
 
-.test22 {
-	background-color: red;
-}
-
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -55,47 +51,46 @@
   background: white;
   padding:20px;
   margin-top: 0px;
-  position: relative;
+  /*margin-bottom: 5em;*/
+  position: absolute;
 }
-/*.main {
-	margin-bottom: 40em;
-}*/
 .about {
 	text-decoration: none;
 	color: #cc0033;
-	margin-top: 20px;
-    position: absolute;
-    left: 8em;
-    text-decoration: none;
+	margin-top: 40px;
+}
+.about:hover {
+	color: black;
+}
+
+h2 {
+	text-decoration: none;
 	float: left;
 	font-size: 30px;
 	color: #cc0033;
 	font-family: 'Coming Soon', cursive;
+	position: relative;
+	left: 15%;
 }
-	.about:hover {
-		color: black;
-	}
 	.home_searchbox {
 		float: right;
+		margin-top: 25px;
+		margin-right: 12%;
+		margin-bottom: 20px;
 	}
-	.home_input {
-		position: absolute;
-    	top: 1.4em;
-    	left: 46em;
 
-	}
-	.home_input,
-	.about_input {
+	input {
 		width: 300px;
 		height: 32px;
 		background-color: #e6e6e6;
+		display: inline-block;
 		font-family: 'Book Antiqua', times;
-		font-size: 16px;
 		border: 1.5px solid #cc0033;
+		position: relative;
+    	bottom: 6px;
    		text-align: center;
 	}
-	.home_search,
-	.about_search {
+	button {
 		width: 100px;
 		height: 36px;
 		font-size: 25px !important;
@@ -103,25 +98,19 @@
 		font-family: 'Coming Soon', cursive !important;
 		border: 1px solid #cc0033;;
 		background-color: #e6e6e6;
-		margin-right: 5.2em;
-    	margin-top: .9em;
-    	padding-left: 10px;
 
 	}
 	button:hover {
 		color: black;
 	}
-
-.logo {
+#logo {
 	width: 24%;
 	height: auto;
 	margin-left: 37.5%;
-	position: absolute;
-	top: 9em;
-    left: 29.3em;
+	position: relative;
+	top: 50px;
 	display: block;
 }
-
 .pencil img {
 	width: 250px;
 	height: auto;
@@ -139,7 +128,7 @@
 	}
 	#pencil2 img {
 		position: absolute;
-		top: 277px;
+		top: 275px;
 		left: 245px;
 	}
 	#pencil3 img {
@@ -175,7 +164,7 @@
 	#pencil6 img {
 		position: absolute;
 		top: 375px;
-		left: 45.5em;
+		left: 59%;
 	    -webkit-transform: rotate(200deg);
 	    -moz-transform: rotate(200deg);
 	    -ms-transform: rotate(200deg);
@@ -202,72 +191,67 @@
 .icons:hover span.subject_title {
 	display: table-cell;
 }*/
-
 .science img {
 	width: 125px;
 	height: auto;
 	float: left;
-	position: absolute;
-	left: 7.8em;
-	top: 6em;
+	position: relative;
+	bottom: 300px;
+	left: 100px;
 }
-
 .history img {
 	width: 125px;
 	float: left;
-	position: absolute;
-	top: 17em;
-	left: 7.3em;
+	position: relative;
+	bottom: 130px;
+	right: 30px;
 }
-
 .arts img {
 	width: 125px;
 	height: auto;
-	position: absolute;
-	top: 27.4em;
-	left: 9.3em;
+	position: relative;
+	right: 125px;
+	top: 35px;
 	float: left;
 }
-
 .english img {
 	width: 125px;
 	height: auto;
 	float: right;
-	position: absolute;
-	left: 63.2em;
-	top: 6.8em;
+	position: relative;
+	bottom: 295px;
+	right: 80px;
 }
-
 .math img {
 	width: 125px;
 	height: auto;
 	float: right;
-	position: absolute;
-	left: 63.5em;
-	top: 17em;
+	position: relative;
+	bottom: 140px;
+	left: 4%;
 }
-
 .more img {
 	width: 125px;
 	height: auto;
-	position: absolute;
-	top: 27.5em;
-	left: 61em;
+	position: relative;
+	top: 37px;
+	left: 11.3%;
 	float: right;
 }
 .tagline {
 	font-family: 'Book Antiqua', times;
 	font-size: 40px;
 	color: #5B6166;
-	position: relative;
-	top: 12.5em;
-	left: 9em;
+	position: absolute;
+	top: 13em;
+	left: 30%;
+	display: inline-block;
 }
 span img {
 	width: 225px;
 	height: auto;
-	/*position: absolute;
-	top: 5px;*/
+	position: relative;
+	top: 5px;
 }
 
 /******************************************/
@@ -275,10 +259,7 @@ span img {
 /******************************************/
 .about_page {
 	width: 1200px;
-	height: 780px;
-	margin-top: 60em;
-	position: relative;
-	border: 1px red solid;
+	height: 900px;
 }
 
 /******************************************/
@@ -287,47 +268,23 @@ span img {
 
 .about_nav {
 	position: relative;
-	border: 1px solid red;
-    width: 100%;
-    height: 10em;
+	top: 56.5em;
 	z-index: 9999;
 }
 .about_logo {
-	position: absolute;
-	top: .8em;
-    width: 8em;
-    height: auto;
+	position: relative;
+	right: 23em;
+	top: .5em;
 }
-/*.about_searchbox {
-	width: 28em;
-    height: 3em;
-    border: 1px solid red;
-    position: absolute;
-    bottom: 42.5em;
-/*/
-.about_input{
-	position: absolute;
-}
-.about_search {
-		position: absolute;
-	}
-.about_subjects_nav {
-	border: 1px red solid;
-	width: 100%;
-  	height: 18%; 
-  	position: fixed;
-  	background-color: white;
-  	z-index: 9999;
-}
-
 .notepad {
 	background: url("../images/bio_notepad.jpg") center center no-repeat;
 	width: 100%;
 	height: 750px;
 	background-size: cover;
-	position: absolute;
+	position: relative;
+    top: 20%;
 }
-/*.blackborder {
+.blackborder {
 	width: 230px;
 	height: 297px;
 	background-color: black;
@@ -341,8 +298,8 @@ span img {
 	position: absolute;
     top: .95em;
     left: .96em;
-}*/
-/*.bio {
+}
+.bio {
     width: 23%;
     height: 40%;
     font-family: 'Annie Use Your Telescope', serif;
@@ -352,10 +309,10 @@ span img {
     position: absolute;
     bottom: 37.3%;
     line-height: 1.5em;
-  }*/
+  }
 
 
-/*****************************************
+/******************************************/
 /*NAV FOR ALL PAGES EXCEPT HOME PAGE*/
 /******************************************/
 .main_nav {
@@ -369,7 +326,6 @@ nav img {
 	width: 100%;
 	height: auto;
 }
-
 		.logo_home {
 			width: 125px;
 			height: auto;
@@ -389,38 +345,32 @@ nav img {
 			bottom: 90px;
     		right: 3em;
 		}
-		.about_science_nav,	
-		.science_nav img{
+		.science_nav {
 			width: 75px;
 			height: auto;	
 			display: inline-block;
 		}
-		.about_history_nav,
-		.history_nav img{
+		.history_nav {
 			width: 75px;
 			height: auto;	
 			display: inline-block;
 		}
-		.about_arts_nav,
-		.arts_nav img{
+		.arts_nav {
 			width: 75px;
 			height: auto;	
 			display: inline-block;
 		}
-		.about_english_nav,
-		.english_nav img{
+		.english_nav {
 			width: 75px;
 			height: auto;	
 			display: inline-block;
 		}
-		.about_math_nav,
-		.math_nav img{
+		.math_nav {
 			width: 75px;
 			height: auto;
 			display: inline-block;	
 		}
-		.about_more_nav,
-		.more_nav img{
+		.more_nav {
 			width: 75px;
 			height: auto;
 			display: inline-block;	
@@ -564,6 +514,14 @@ nav img {
 		margin-left: 1.5em;
   		padding-top: 2em;	
 	}
+	/*trying to change bg color and text color of dropdowns*/
+	/*#world_eras,
+	#regions,
+	#modern_history {
+		background-color: black;
+  		color: white;
+  		/*border-radius: 0;*/
+
 		#world_era_name,
 		#region_name,
 		#modern_history_category {
@@ -593,7 +551,7 @@ nav img {
 .history_directory {
 	display: inline-flex;
     position: absolute;
-    top: 26%;
+    top: 27%;
     color: #cc0033;
     font-family: 'Coming Soon', cursive;
     font-size: 1.3em;
@@ -614,7 +572,7 @@ nav img {
     line-height: .5em;
     letter-spacing: 0;
     position: absolute;
-    top: 6em;
+    top: 6.8em;
     margin-left: .8em;
 }
 .civil_war_body {
@@ -624,7 +582,7 @@ nav img {
     font-size: 1.5em;
     line-height: 1.3em;
     position: relative;
-    top: 12em;
+    top: 14em;
     margin-left: 1.3em;
 }
 .ft_sumter {
@@ -677,8 +635,7 @@ nav img {
     float: right;
     overflow: hidden;
     position: relative;
-    top: 17em;
-    text-decoration: none;
+    top: 18em;
 }
 .aside_head {
 	text-transform: uppercase;
@@ -687,8 +644,7 @@ nav img {
 }
 .civil_war_aside_list {
 	text-align: left;
-	font-weight: bold;
-
 }
-
-
+.cv_dates {
+	font-weight: bold;
+}

@@ -32,15 +32,23 @@ setTimeout(function(){
 
 // / // Home Page--"About" button--onclick, smooth scroll down to About Page
 // // $('.about').on('click', function(e){
- $('.about').on('click', function(){
- 	 $('html, body').animate({scrollTop:$(document).height()}, 'slow');
-        return false;
+$('.about').on('click', function(){
+ 	 $('html, body').animate({scrollTop:885}, 'slow');
  });
 
 // About Page--logo, onclick smooth scroll up to home page
-$('.about').on('click', function(){
- 	 $('html, body').animate({scrollTop:$(document).height()}, 'slow');
- });
+$('.about_logo').on('click', function(){
+	$('html, body').animate({scrollTop: 0}, 'slow');
+	return false;
+});
+
+// $('.science_nav').mouseover(function(){
+// 			$(this).parent().find('img:first').stop().animate({opacity:.5}, 1000);
+// 		})
+// 		$('.img_grayscale').mouseout(function(){
+// 			$(this).stop().animate({opacity:0}, 1000);
+// 		});		
+// 	});
 
 // // All Pages--search input--val=civil war, link to civl war page
 // $('.searchbox').on('click', function(e){
@@ -53,9 +61,9 @@ $('.about').on('click', function(){
 
 // History Page--"US History" button, onclick smoothscroll to US History
 // History Page--"World History" button, onclick smoothscroll to World History
- $('.us_history_button').on('click', function(){
- 	 $('html, body').animate({scrollTop:$(document).height()}, 'slow');
-        return false;
+$('.us_history_button').on('click', function(){
+ 	 $('html, body').animate({scrollTop:720}, 'slow');
+ console.log('us history hello!');
  });
 
 
@@ -63,6 +71,11 @@ $('.about').on('click', function(){
  	 $('html, body').animate({scrollTop:$(document).height()}, 'slow');
         return false;
  });
+
+$('.historyHistoryNav').on('click', function(){
+	$('html, body').animate({scrollTop: 0}, 'slow');
+	return false;
+});
 
 // US History--drop down menus for Chronological Eras, Wars, Presidents. Link to Civil War page
 var eras = ['Early America to 1630', 'The Colonial Period 1630-1763', 'Revolutionary America 1763-1783',

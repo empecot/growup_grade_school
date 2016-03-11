@@ -172,8 +172,14 @@ h2 {
 	    transform: rotate(200deg);
 	}
 
-.icons:hover {
-	opacity: .2
+.icons:hover,
+/*.science_nav:hover,
+.history_nav:hover,
+.arts_nav:hover,
+.english_nav:hover,
+.math_nav:hover,
+.more_nav:hover*/ {
+	opacity: .5;
 }
 .subject_title {
 	display: none;
@@ -259,7 +265,8 @@ span img {
 /******************************************/
 .about_page {
 	width: 1200px;
-	height: 900px;
+	height: 0px;
+	margin-top: 30em;
 }
 
 /******************************************/
@@ -268,12 +275,10 @@ span img {
 
 .about_nav {
 	position: relative;
-	top: 56.5em;
 	z-index: 9999;
 }
 .about_logo {
 	position: relative;
-	right: 23em;
 	top: .5em;
 }
 .notepad {
@@ -551,7 +556,7 @@ nav img {
 .history_directory {
 	display: inline-flex;
     position: absolute;
-    top: 27%;
+    top: 23%;
     color: #cc0033;
     font-family: 'Coming Soon', cursive;
     font-size: 1.3em;
@@ -572,7 +577,7 @@ nav img {
     line-height: .5em;
     letter-spacing: 0;
     position: absolute;
-    top: 6.8em;
+    top: 5.5em;
     margin-left: .8em;
 }
 .civil_war_body {
@@ -582,7 +587,7 @@ nav img {
     font-size: 1.5em;
     line-height: 1.3em;
     position: relative;
-    top: 14em;
+    top: 12em;
     margin-left: 1.3em;
 }
 .ft_sumter {

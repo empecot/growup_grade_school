@@ -8,44 +8,37 @@ $(document).ready(function () {
 
 // // Home Page--on load, start with apple logo, then fade in subjects then pencils
 
-$('').hide();
+$('.test').hide();
 setTimeout(function(){ 
-	$(".test").fadeIn('slow', function(){
-		console.log("i'm appearing");
-	}); 
-}, 1000);
+        $(".test").fadeTo(800, 1)
+}, 2000);
 
 
 $('.fadeInSearchbox').hide();
 setTimeout(function(){ 
-	$(".fadeInSearchbox").fadeIn('slow', function(){
-		console.log("i'm appearing");
-	}); 
-}, 3000);
+        $(".fadeInSearchbox").fadeTo(800, 1)
+}, 4000);
+
 
 $('.about').hide();
 setTimeout(function(){ 
-	$(".about").fadeIn('slow', function(){
-		console.log("i'm appearing");
-	}); 
-}, 3000);
+        $(".about").fadeTo(800, 1)
+}, 4000);
+
 
 $('.tagline').hide();
 setTimeout(function(){ 
-	$(".tagline").fadeIn('slow', function(){
-		console.log("i'm appearing");
-	}); 
-}, 3000);
+        $(".tagline").fadeTo(800, 1)
+}, 4000);
+		
 
 $('.fadeInPencils').hide();
 setTimeout(function(){ 
-	$(".fadeInPencils").fadeIn('slow', function(){
-		console.log("i'm appearing");
-	}); 
-}, 2000);
+        $(".fadeInPencils").fadeTo(800, 1)
+}, 3000);
+		
 
-// / // Home Page--"About" button--onclick, smooth scroll down to About Page
-// // $('.about').on('click', function(e){
+// Home Page--"About" button--onclick, smooth scroll down to About Page
 $('.about').on('click', function(){
  	 $('html, body').animate({scrollTop:885}, 'slow');
  });
@@ -207,6 +200,11 @@ for (var i = 0; i < modernHistory.length; i++) {
 // // Civil War Page--history directory--onclick link back to appropriate page
 
 // // Civil War Page--Key Events Aside--onclick, smoothscroll to event
+
+$('.cvUSHistoryLink').on('click')
+
+
+
 
  // $(document).ready(function () {
  //                $(".cv_date1").click(function () {

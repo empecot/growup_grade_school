@@ -42,6 +42,10 @@
 /******************************************/
 /*HOME PAGE*/
 /******************************************/
+a {
+	text-decoration: none;
+	list-style-type: none;
+}
 
 .body_home {
   width: 1200px;
@@ -625,31 +629,52 @@ nav img {
 	margin-left: 1em;
 	margin-top: -1.5em;
 }
-}
-.key_events h4 {
-	font-weight: bold;
-	font-size: 2em;
+.aside_head {
+	text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+	font-size: 1.2em;
+    font-family: 'Book Antiqua', times;
+    text-align: center;
 }
 .civil_war_aside {
 	width: 25%;
     height: 800px;
     border: 1px solid #4A4A49;
-    font-family: 'Book Antiqua', times;
-    color: #4A4A49;
-    text-align: center;
     float: right;
     overflow: hidden;
     position: relative;
     top: 18em;
-}
-.aside_head {
-	text-transform: uppercase;
-    text-decoration: underline;
+	font-family: 'Book Antiqua', times;
+    color: #4A4A49;
+    text-align: left;
     font-weight: bold;
+    padding-bottom: 2em;
+
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 2em;
 }
-.civil_war_aside_list {
-	text-align: left;
+.cvKeys a {
+   text-decoration: none;
+	
+	font-family: 'Book Antiqua', times;
+    color: #4A4A49;
 }
-.cv_dates {
-	font-weight: bold;
-}
+/*.cvKeyEvents {
+	list-style-type: none;
+	font-family: 'Book Antiqua', times;
+    color: #4A4A49;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 2em;
+}*/
+/*.civil_war_aside_list {
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Book Antiqua', times;
+    color: #4A4A49;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 2em;
+}*/

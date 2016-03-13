@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 // // Home Page--on load, start with apple logo, then fade in subjects then pencils
 
-$('.test').hide();
+$('').hide();
 setTimeout(function(){ 
 	$(".test").fadeIn('slow', function(){
 		console.log("i'm appearing");
@@ -16,9 +16,23 @@ setTimeout(function(){
 }, 1000);
 
 
-$('.fadeInSearchbox', '.about', '.tagline').hide();
+$('.fadeInSearchbox').hide();
 setTimeout(function(){ 
-	$(".fadeInText").fadeIn('slow', function(){
+	$(".fadeInSearchbox").fadeIn('slow', function(){
+		console.log("i'm appearing");
+	}); 
+}, 3000);
+
+$('.about').hide();
+setTimeout(function(){ 
+	$(".about").fadeIn('slow', function(){
+		console.log("i'm appearing");
+	}); 
+}, 3000);
+
+$('.tagline').hide();
+setTimeout(function(){ 
+	$(".tagline").fadeIn('slow', function(){
 		console.log("i'm appearing");
 	}); 
 }, 3000);

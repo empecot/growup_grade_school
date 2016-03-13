@@ -16,7 +16,7 @@ setTimeout(function(){
 }, 1000);
 
 
-$('.fadeInText').hide();
+$('.fadeInSearchbox', '.about', '.tagline').hide();
 setTimeout(function(){ 
 	$(".fadeInText").fadeIn('slow', function(){
 		console.log("i'm appearing");
@@ -194,11 +194,11 @@ for (var i = 0; i < modernHistory.length; i++) {
 
 // // Civil War Page--Key Events Aside--onclick, smoothscroll to event
 
- $(document).ready(function () {
-                $(".cv_date1").click(function () {
-                    var x = $(".key_event1").position(); //gets the position of the div element...
-                    window.scrollTo(x.left, x.top); //window.scrollTo() scrolls the page upto certain position....
-                    //it takes 2 parameters : (x axis cordinate, y axis cordinate);
-                });
-            });
+ // $(document).ready(function () {
+ //                $(".cv_date1").click(function () {
+ //                    var x = $(".key_event1").position(); //gets the position of the div element...
+ //                    window.scrollTo(x.left, x.top); //window.scrollTo() scrolls the page upto certain position....
+ //                    //it takes 2 parameters : (x axis cordinate, y axis cordinate);
+ //                });
+ //            });
 

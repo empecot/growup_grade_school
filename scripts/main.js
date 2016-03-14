@@ -41,23 +41,20 @@ $('.about').on('click', function(){
  	 $('html, body').animate({scrollTop:775}, 'slow');
  });
 
+// Show text over icons on hover
+   // $(".science").hover(
+   //      function () {
+   //          $(this).find("science_title").text("SCIENCE");
+   //      },
+   //      function () { 
+   //          $(this).find("science_title").text("SCIENCE");
+   //      });
+
 // About Page--logo, onclick smooth scroll up to home page
 $('.about_logo').on('click', function(){
 	$('html, body').animate({scrollTop: 0}, 'slow');
 	return false;
 });
-
-// $('.science_nav').mouseover(function(){
-// 			$(this).parent().find('img:first').stop().animate({opacity:.5}, 1000);
-// 		})
-// 		$('.img_grayscale').mouseout(function(){
-// 			$(this).stop().animate({opacity:0}, 1000);
-// 		});		
-// 	});
-
-// // All Pages--search input--val=civil war, link to civl war page
-// $('.searchbox').on('click', function(e){
-// 	e.preventDefault();
 
 
 /******************************************/
@@ -213,18 +210,83 @@ for (var i = 0; i < modernHistory.length; i++) {
 
 // // Civil War Page--history directory--onclick link back to appropriate page
 
+
+
+// $('.cvUSHistoryLink').on('click' function(){
+//     $('html, body').window.scrollTo(0, '.ushistorylink'.offset().top - fixedElementHeight);
+//     return false;
+//     });
+
 // // Civil War Page--Key Events Aside--onclick, smoothscroll to event
+$(".cv_date1").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event1").offset().top},
+        'slow');
+});
 
-$('.cvUSHistoryLink').on('click')
+$(".cv_date2").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event2").offset().top-150},
+        'slow');
+});
+
+$(".cv_date3").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event3").offset().top-150},
+        'slow');
+});
+
+$(".cv_date4").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event4").offset().top-150},
+        'slow');
+});
+
+$(".cv_date5").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event5").offset().top-150},
+        'slow');
+});
+
+$(".cv_date6").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event6").offset().top-150},
+        'slow');
+});
+
+$(".cv_date7").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event7").offset().top-150},
+        'slow');
+});
 
 
+$(".cv_date8").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event8").offset().top-150},
+        'slow');
+});
 
+$(".cv_date9").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event9").offset().top-150},
+        'slow');
+});
 
- // $(document).ready(function () {
- //                $(".cv_date1").click(function () {
- //                    var x = $(".key_event1").position(); //gets the position of the div element...
- //                    window.scrollTo(x.left, x.top); //window.scrollTo() scrolls the page upto certain position....
- //                    //it takes 2 parameters : (x axis cordinate, y axis cordinate);
- //                });
- //            });
+$(".cv_date10").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".key_event10").offset().top-150},
+        'slow');
+});
 
+$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});

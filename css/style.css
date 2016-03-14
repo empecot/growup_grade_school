@@ -176,31 +176,28 @@ h2 {
 	    transform: rotate(200deg);
 	}
 
-.icons:hover,
-/*.science_nav:hover,
-.history_nav:hover,
-.arts_nav:hover,
-.english_nav:hover,
-.math_nav:hover,
-.more_nav:hover*/ {
-	opacity: .5;
-}
-.subject_title {
-	display: none;
-}
-/*span.subject_title {
+.science_title,
+.history_title,
+.arts_title,
+.english_title,
+.math_title,
+.more_title {
 	display: none;
 	color: black;
 	font-family: 'Book Antiqua', times;
 	font-size: 1em;
 	text-decoration: none;
-	position: absolute;
 	text-align: center;
 	vertical-align: middle;
 }
-.icons:hover span.subject_title {
-	display: table-cell;
-}*/
+.science_title:hover,
+.history_title:hover,
+.arts_title:hover,
+.english_title:hover,
+.math_title:hover,
+.more_title:hover {
+	opacity: .3;
+}
 .science img {
 	width: 125px;
 	height: auto;
@@ -406,7 +403,6 @@ span img {
     left: .8em;
     padding-top: 1em;
     padding-bottom: 1em;
-
 }
 .historySearchButton {
 	position: relative;
@@ -561,6 +557,16 @@ span img {
 
 .civilWarNav {
 	margin-top: 1em;
+	position: fixed;
+	bottom: 33em;
+	background-color: white;
+	width: 100%;
+	height: 18%;
+	display: inline-block;
+  	z-index: 9999;
+    left: .8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .civilWarSearchButton {
 	position: relative;
@@ -583,10 +589,14 @@ span img {
     list-style: none;
     letter-spacing: .08em;
 }
-
 .civil_war_main {
 	float: left;
 	width: 70%;
+	margin-top: 8em;
+
+}
+.civil_war_aside {
+	margin-top: 9em;
 }
 .civil_war_header {
     font-family: 'Book Antiqua', times;
@@ -609,6 +619,7 @@ span img {
     position: relative;
     top: 6em;
     margin-left: 1.3em;
+    margin-bottom: 8em;
 }
 .ft_sumter {
 	width: 45%;
@@ -672,4 +683,21 @@ span img {
 }
 .cvKeys:hover {
 	 color: #cc0033;
+}
+.scrollToTop{
+	text-align:center; 
+	background: white;
+	font-weight: bold;
+	font-size: 32px;
+    color: #cc0033;
+    text-decoration: none;
+    position: fixed;
+    top: 19em;
+    right: 2em;
+    font-family: 'Coming Soon', cursive;
+    display: none;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+	color: black;
 }

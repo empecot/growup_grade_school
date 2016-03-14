@@ -45,7 +45,6 @@
 a {
 	text-decoration: none;
 	list-style-type: none;
-	color: #4A4A49;
 }
 
 .body_home {
@@ -56,12 +55,14 @@ a {
   background: white;
   padding:20px;
   margin-top: 0px;
+  /*margin-bottom: 5em;*/
   position: absolute;
 }
 .about {
 	text-decoration: none;
 	color: #cc0033;
 	margin-top: 40px;
+/*	opacity: 0;*/
 }
 .about:hover {
 	color: black;
@@ -81,6 +82,7 @@ h2 {
 		margin-top: 25px;
 		margin-right: 12%;
 		margin-bottom: 20px;
+	/*	opacity: 0;*/
 	}
 
 	input {
@@ -103,6 +105,7 @@ h2 {
 		font-family: 'Coming Soon', cursive !important;
 		border: 1px solid #cc0033;;
 		background-color: #e6e6e6;
+
 	}
 	button:hover {
 		color: black;
@@ -119,6 +122,7 @@ h2 {
 	width: 250px;
 	height: auto;
 	display: block;
+/*	opacity: 0;*/
 }
 	#pencil1 img {
 		position: absolute;
@@ -208,6 +212,7 @@ h2 {
 	position: relative;
 	bottom: 300px;
 	left: 100px;
+/*	opacity: 0;*/
 }
 .history img {
 	width: 125px;
@@ -215,6 +220,7 @@ h2 {
 	position: relative;
 	bottom: 130px;
 	right: 30px;
+/*	opacity: 0;*/
 }
 .arts img {
 	width: 125px;
@@ -223,6 +229,7 @@ h2 {
 	right: 125px;
 	top: 35px;
 	float: left;
+	/*opacity: 0;*/
 }
 .english img {
 	width: 125px;
@@ -231,6 +238,7 @@ h2 {
 	position: relative;
 	bottom: 295px;
 	right: 80px;
+	/*opacity: 0;*/
 }
 .math img {
 	width: 125px;
@@ -239,6 +247,7 @@ h2 {
 	position: relative;
 	bottom: 140px;
 	left: 4%;
+	/*opacity: 0;*/
 }
 .more img {
 	width: 125px;
@@ -247,6 +256,7 @@ h2 {
 	top: 37px;
 	left: 11.3%;
 	float: right;
+	/*opacity: 0;*/
 }
 .tagline {
 	font-family: 'Book Antiqua', times;
@@ -256,6 +266,7 @@ h2 {
 	top: 13em;
 	left: 30%;
 	display: inline-block;
+/*	opacity: 0;*/
 }
 span img {
 	width: 225px;
@@ -270,88 +281,21 @@ span img {
 .about_page {
 	width: 1200px;
 	height: 0px;
-	margin-top: 15em;
+	margin-top: 30em;
 }
 
-.aboutNav {
-	width: 100%;
-	height: 18%;
-	display: inline-block;
+/******************************************/
+/*NAV FOR ABOUT PAGE ONLY*/
+/******************************************/
+
+.about_nav {
 	position: relative;
-  	z-index: 9999;
-  	top: 8.5em;
-    left: .8em;
+	z-index: 9999;
 }
-.aboutLogo,
-.historyLogo,
-.civilWarLogo {
-	width: 125px;
-	height: auto;
-	display: inline-block;
+.about_logo {
 	position: relative;
+	top: .5em;
 }
-
-.aboutSearchbox,
-.historySearchbox,
-.civilWarSearchbox {
-	display: inline-block;
-	position: absolute;		
-	top: 4.5em;
-    left: 140px;
-}
-
-.aboutSubjectsNav,
-.historySubjectsNav,
-.civilWarSubjectsNav {
-	float: right;
-	display: inline-block;
-	position: relative;
-	top: 2.5em;
-    right: 3em;
-}
-.aboutScience,
-.aboutHistory,
-.aboutArts,
-.aboutEnglish,
-.aboutMath,
-.aboutMore,
-.historyScience,
-.historyHistory,
-.historyArts,
-.historyEnglish,
-.historyMath,
-.historyMore,
-.civilWarScience,
-.civilWarHistory,
-.civilWarArts,
-.civilWarEnglish,
-.civilWarMath,
-.civilWarMore {
-	width: 75px;
-	height: auto;	
-	display: inline-block;
-}
-.aboutScience:hover,
-.aboutHistory:hover,
-.aboutArts:hover,
-.aboutEnglish:hover,
-.aboutMath:hover,
-.aboutMore:hover,
-.historyScience:hover,
-.historyHistory:hover,
-.historyArts:hover,
-.historyEnglish:hover,
-.historyMath:hover,
-.historyMore:hover,
-.civilWarScience:hover,
-.civilWarHistory:hover,
-.civilWarArts:hover,
-.civilWarEnglish:hover,
-.civilWarMath:hover,
-.civilWarMore:hover {
-	opacity: .8;
-}
-
 .notepad {
 	background: url("../images/bio_notepad.jpg") center center no-repeat;
 	width: 100%;
@@ -387,6 +331,71 @@ span img {
     line-height: 1.5em;
   }
 
+
+/******************************************/
+/*NAV FOR ALL PAGES EXCEPT HOME PAGE*/
+/******************************************/
+.main_nav {
+  width: 100%;
+  height: 18%; 
+  position: fixed;
+  background-color: white;
+  z-index: 9999;
+}
+nav img {
+	width: 100%;
+	height: auto;
+}
+		.logo_home {
+			width: 125px;
+			height: auto;
+			display: inline-block;
+			position: relative;
+		}
+		.nav_searchbox {
+			display: inline-block;
+			position: absolute;
+			top: 70px;
+    		left: 140px;
+		}
+		.subjects_nav {
+			float: right;
+			display: inline-block;
+			position: relative;
+			bottom: 90px;
+    		right: 3em;
+		}
+		.science_nav {
+			width: 75px;
+			height: auto;	
+			display: inline-block;
+		}
+		.history_nav {
+			width: 75px;
+			height: auto;	
+			display: inline-block;
+		}
+		.arts_nav {
+			width: 75px;
+			height: auto;	
+			display: inline-block;
+		}
+		.english_nav {
+			width: 75px;
+			height: auto;	
+			display: inline-block;
+		}
+		.math_nav {
+			width: 75px;
+			height: auto;
+			display: inline-block;	
+		}
+		.more_nav {
+			width: 75px;
+			height: auto;
+			display: inline-block;	
+		}
+
 /******************************************/
 /*HISTORY MAIN PAGE*/
 /******************************************/
@@ -394,23 +403,7 @@ span img {
 .history_main {
 	width: 1200px;
 	height: 450px;
-}
-.historyNav {
-	position: fixed;
-	bottom: 33.2em;
-	background-color: white;
-	width: 100%;
-	height: 18%;
-	display: inline-block;
-  	z-index: 9999;
-    left: .8em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-
-}
-.historySearchButton {
-	position: relative;
-    top: .09em;
+	margin-bottom: 20em;
 }
 	.chalkboard {
 		width: 100%;
@@ -418,7 +411,7 @@ span img {
 		text-align: center;
 		position: relative;
 		left: 2em;
-		top: 8em;
+		top: 27%;
 		font-family: 'Drawzing';
 		color: rgba(0, 0, 0, 0.5);
 		margin-bottom: 25em;
@@ -430,14 +423,11 @@ span img {
 		font-size: 8em;
 	    margin: 0.67em 0;
 	    position: absolute;
-	    top: .5em;
+	    top: .3em;
     	left: 2.5em;
 	    letter-spacing: .1em;		
 	}
 
-	.us_history_button:hover{
-		color: red;
-	}
 	.us_history_button {
 		font-size: 45px;
 	    color: #f4f4f0;
@@ -445,9 +435,6 @@ span img {
 	    top: 7em;
     	left: 5.5em;
 	    float: left;
-	}
-	.world_history_button:hover {
-		color: red;
 	}
 	.world_history_button {
 		font-size: 45px;
@@ -491,6 +478,13 @@ span img {
 		margin-left: 1.5em;
   		padding-top: 2em;		
 	}
+	/*trying to change bg color and text color of dropdowns*/
+	/*#wars,
+	#eras,
+	#presidents {
+		background-color: black;
+  		color: white;
+  		/*border-radius: 0;*/
 	#era_name,
 	#war_name,
 	#president_name {
@@ -507,8 +501,8 @@ span img {
 
 .worldhistory_main {
 	width: 100%;
-	height: 450px;
-	margin-top: 8em;
+	height: 500px;
+	margin-top: 10em;
 }
 		.world_map {
 		width: 65%;
@@ -540,6 +534,14 @@ span img {
 		margin-left: 1.5em;
   		padding-top: 2em;	
 	}
+	/*trying to change bg color and text color of dropdowns*/
+	/*#world_eras,
+	#regions,
+	#modern_history {
+		background-color: black;
+  		color: white;
+  		/*border-radius: 0;*/
+
 		#world_era_name,
 		#region_name,
 		#modern_history_category {
@@ -559,13 +561,6 @@ span img {
 /*CIVIL WAR PAGE*/
 /******************************************/
 
-.civilWarNav {
-	margin-top: 1em;
-}
-.civilWarSearchButton {
-	position: relative;
-	top: 0em;
-}
 .history_directory a {
 	text-decoration: none;
 	color: #cc0033;
@@ -576,7 +571,7 @@ span img {
 .history_directory {
 	display: inline-flex;
     position: absolute;
-    top: 23.5%;
+    top: 23%;
     color: #cc0033;
     font-family: 'Coming Soon', cursive;
     font-size: 1.3em;
@@ -607,7 +602,7 @@ span img {
     font-size: 1.5em;
     line-height: 1.3em;
     position: relative;
-    top: 6em;
+    top: 12em;
     margin-left: 1.3em;
 }
 .ft_sumter {
@@ -660,16 +655,37 @@ span img {
     float: right;
     overflow: hidden;
     position: relative;
-    top: 4.8em;
+    top: 18em;
 	font-family: 'Book Antiqua', times;
+    color: #4A4A49;
     text-align: left;
     font-weight: bold;
     padding-bottom: 2em;
+
     text-align: left;
+    font-weight: bold;
+    padding-bottom: 2em;
 }
-.cvKeys:link {
-	color: #4A4A49;
+.cvKeyEvents {
+   text-decoration: none;
+	
+	font-family: 'Book Antiqua', times;
+    color: #4A4A49;
 }
-.cvKeys:hover {
-	 color: #cc0033;
-}
+/*.cvKeyEvents {
+	list-style-type: none;
+	font-family: 'Book Antiqua', times;
+    color: #4A4A49;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 2em;
+}*/
+/*.civil_war_aside_list {
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Book Antiqua', times;
+    color: #4A4A49;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 2em;
+}*/

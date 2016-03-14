@@ -38,7 +38,7 @@ setTimeout(function(){
 
 // Home Page--"About" button--onclick, smooth scroll down to About Page
 $('.about').on('click', function(){
- 	 $('html, body').animate({scrollTop:775}, 'slow');
+ 	 $('html, body').animate({scrollTop:885}, 'slow');
  });
 
 // About Page--logo, onclick smooth scroll up to home page
@@ -67,34 +67,20 @@ $('.about_logo').on('click', function(){
 // History Page--"US History" button, onclick smoothscroll to US History
 // // History Page--"World History" button, onclick smoothscroll to World History
 
-  $(function(){
-      $(".history_head").typed({
-        strings: ["HISTORY"],
-        typeSpeed: 150
-      });
-  });
 
- $(".us_history_button").fadeTo(0, 0);
-setTimeout(function(){ 
-        $(".us_history_button").fadeTo(500, 1)
-}, 2000);
-
- $(".world_history_button").fadeTo(0, 0);
-setTimeout(function(){ 
-        $(".world_history_button").fadeTo(500, 1)
-}, 2000);
 
 $('.us_history_button').on('click', function(){
- 	 $('html, body').animate({scrollTop:700}, 'slow');
+ 	 $('html, body').animate({scrollTop:720}, 'slow');
  console.log('us history hello!');
  });
 
 
-$('.world_history_button').on('click', function(){
- 	 $('html, body').animate({scrollTop:2000}, 'slow');
- });	 
+ $('.world_history_button').on('click', function(){
+ 	 $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+        return false;
+ });
 
-$('.historyHistory').on('click', function(){
+$('.historyHistoryNav').on('click', function(){
 	$('html, body').animate({scrollTop: 0}, 'slow');
 	return false;
 });

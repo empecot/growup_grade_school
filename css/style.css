@@ -42,88 +42,216 @@
 /******************************************/
 /*HOME PAGE*/
 /******************************************/
-a {
-	text-decoration: none;
-	list-style-type: none;
-	color: #4A4A49;
-}
 
-.body_home {
-  width: 1200px;
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
-  background: white;
-  padding:20px;
-  margin-top: 0px;
-  position: absolute;
+header {
+  width: 100%;
+  height: 5.5em;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #cc0033;
+}
+h2 {
+  text-decoration: none;
+  font-size: 30px;
+  color: #cc0033;
+  font-family: 'Coming Soon', cursive;
+}
+button {
+	width: 100px;
+    height: 44px;
+    font-size: 25px !important;
+    color: #cc0033;
+    font-family: 'Coming Soon', cursive !important;
+    border: 1px solid #cc0033;
+    background-color: #e6e6e6;
+}
+.aboutLink:hover {
+  color: black;
 }
 .about {
-	text-decoration: none;
-	color: #cc0033;
-	margin-top: 40px;
-}
-.about:hover {
-	color: black;
+    margin-top: 1em;
+    margin-left: 7em;
 }
 
-h2 {
-	text-decoration: none;
-	float: left;
-	font-size: 30px;
-	color: #cc0033;
-	font-family: 'Coming Soon', cursive;
-	position: relative;
-	left: 15%;
+.searchbox {
+    width: 20em;
+    height: 2.25em;
+    float: right;
+    margin-right: 9em;
+    margin-bottom: 0em;
 }
-	.home_searchbox {
-		float: right;
-		margin-top: 25px;
-		margin-right: 12%;
-		margin-bottom: 20px;
-	}
+form {
+    margin: -64px;
+}
+  input {
+    width: 300px;
+    height: 40px;
+    background-color: #e6e6e6;
+    display: inline-block;
+    font-family: 'Book Antiqua', times;
+    border: 1.5px solid #cc0033;
+    text-align: left;
+    padding-left: 5px;
+  }
+  .homeSearch {
+    width: 100px;
+    height: 40px;
+    font-size: 25px !important;
+    color: #cc0033;
+    font-family: 'Coming Soon', cursive !important;
+    border: 1px solid #cc0033;
+    background-color: #e6e6e6;
+    position: absolute;
+    margin-left: 12.1em;  
+  }
+  button:hover {
+    color: black;
+  }
 
-	input {
-		width: 300px;
-		height: 32px;
-		background-color: #e6e6e6;
-		display: inline-block;
-		font-family: 'Book Antiqua', times;
-		border: 1.5px solid #cc0033;
-		position: relative;
-    	bottom: 6px;
-   		text-align: left;
-   		padding-left: 5px;
-	}
-	button {
-		width: 100px;
-		height: 36px;
-		font-size: 25px !important;
-		color: #cc0033;
-		font-family: 'Coming Soon', cursive !important;
-		border: 1px solid #cc0033;;
-		background-color: #e6e6e6;
-	}
-	button:hover {
-		color: black;
-	}
-#logo {
-	width: 24%;
-	height: auto;
-	margin-left: 37.5%;
-	position: relative;
-	top: 50px;
-	display: block;
+.subjectIconsLeft {
+  width: 10em;
+  height: 30em;
+  margin-left: 5em;
+  margin-top: -1em;
 }
+
+.logoHome {
+  width: 20em;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 29em;
+  top: 8em;
+}
+.subjectIconsRight {
+    width: 10em;
+    height: 30em;
+    position: absolute;
+    left: 65em;
+    top: 6.3em;
+}
+
+.iconDivs {
+  width: 125px;
+  height: auto;
+  position: relative;
+}
+.subjectPics {
+  width: 100%;
+  height: 100%;
+}
+.scienceIcon:hover {
+  opacity: .3;
+}
+.historyIcon:hover {
+  opacity: .3;
+}
+.artsIcon:hover {
+  opacity: .3;
+}
+.englishIcon:hover {
+  opacity: .3;
+}
+.mathIcon:hover {
+  opacity: .3;
+}
+.moreIcon:hover {
+  opacity: .3;
+}
+.titles {
+    font-size: 1.5em;
+    font-family: 'Book Antiqua', times;
+    font-weight: bold;  
+    color: #cc0033;
+    display: none;
+}
+.scienceTitle {
+	position: absolute;
+	top: 2.1em;
+    left: .35em;
+}
+.historyTitle {
+	position: absolute;
+	top: 2.1em;
+    left: .24em;
+}
+.artsTitle {
+	position: absolute;
+	top: 2em;
+    left: 1.2em;
+}
+.englishTitle {
+	position: absolute;
+	top: 2.1em;
+    left: .28em;
+}
+.mathTitle {
+	position: absolute;
+	top: 2.2em;
+    right: .98em;
+	
+}
+.moreTitle {
+    position: absolute;
+    top: 2em;
+    left: 1.1em;
+}
+
+.science {
+	margin-left: 3em;
+}
+
+.history {
+	margin-left: 2.4em;
+	margin-top: 2em;
+}
+.arts {
+	top: 3.1em;
+    left: 4.5em;
+}
+.english {
+	position: absolute;
+    right: 3em;
+}
+.math {
+	position: absolute;
+	left: 1em;
+	margin-top: 2em;
+}
+.more {
+	top: 11.4em;
+    position: absolute;
+    right: 2.5em;
+}
+
 .pencil img {
 	width: 250px;
 	height: auto;
 	display: block;
 }
+.leftPencils {
+	width: 16em;
+    height: 30em;
+    float: left;
+    position: absolute;
+    top: 8em;
+    left: 15em;
+    z-index: 1;
+}
+.rightPencils {
+	width: 16em;
+    height: 30em;
+    float: right;
+    position: absolute;
+    left: 49em;
+    top: 9em;
+}
 	#pencil1 img {
 		position: absolute;
-		top: 165px;
-		left: 245px;
+		top: 2em;
+    	left: .5em;
 		-webkit-transform: rotate(20deg);
 	    -moz-transform: rotate(20deg);
 	    -ms-transform: rotate(20deg);
@@ -132,13 +260,13 @@ h2 {
 	}
 	#pencil2 img {
 		position: absolute;
-		top: 275px;
-		left: 245px;
+		top: 8.5em;
+    	left: .3em;
 	}
 	#pencil3 img {
 		position: absolute;
-		top: 375px;
-		left: 270px;
+		top: 15em;
+    	left: 2em;
 		-webkit-transform: rotate(-20deg);
 	    -moz-transform: rotate(-20deg);
 	    -ms-transform: rotate(-20deg);
@@ -147,8 +275,8 @@ h2 {
 	}
 	#pencil4 img {
 		position: absolute;
-		top: 170px;
-		left: 765px;
+		top: 1.4em;
+    	right: .4em;
 	    -webkit-transform: rotate(160deg);
 	    -moz-transform: rotate(160deg);
 	    -ms-transform: rotate(160deg);
@@ -157,8 +285,8 @@ h2 {
 	}
 	#pencil5 img {
 		position: absolute;
-		top: 275px;
-		left: 762px;
+	    top: 7.5em;
+	    left: .2em;
 	    -webkit-transform: rotate(180deg);
 	    -moz-transform: rotate(180deg);
 	    -ms-transform: rotate(180deg);
@@ -167,8 +295,8 @@ h2 {
 	}
 	#pencil6 img {
 		position: absolute;
-		top: 375px;
-		left: 59%;
+		top: 14em;
+    	right: 2em;
 	    -webkit-transform: rotate(200deg);
 	    -moz-transform: rotate(200deg);
 	    -ms-transform: rotate(200deg);
@@ -176,98 +304,29 @@ h2 {
 	    transform: rotate(200deg);
 	}
 
-.science_title,
-.history_title,
-.arts_title,
-.english_title,
-.math_title,
-.more_title {
-	display: none;
-	color: black;
-	font-family: 'Book Antiqua', times;
-	font-size: 1em;
-	text-decoration: none;
-	text-align: center;
-	vertical-align: middle;
-}
-.science_title:hover,
-.history_title:hover,
-.arts_title:hover,
-.english_title:hover,
-.math_title:hover,
-.more_title:hover {
-	opacity: .3;
-}
-.science img {
-	width: 125px;
-	height: auto;
-	float: left;
-	position: relative;
-	bottom: 300px;
-	left: 100px;
-}
-.history img {
-	width: 125px;
-	float: left;
-	position: relative;
-	bottom: 130px;
-	right: 30px;
-}
-.arts img {
-	width: 125px;
-	height: auto;
-	position: relative;
-	right: 125px;
-	top: 35px;
-	float: left;
-}
-.english img {
-	width: 125px;
-	height: auto;
-	float: right;
-	position: relative;
-	bottom: 295px;
-	right: 80px;
-}
-.math img {
-	width: 125px;
-	height: auto;
-	float: right;
-	position: relative;
-	bottom: 140px;
-	left: 4%;
-}
-.more img {
-	width: 125px;
-	height: auto;
-	position: relative;
-	top: 37px;
-	left: 11.3%;
-	float: right;
-}
 .tagline {
+	width: 20em;
 	font-family: 'Book Antiqua', times;
 	font-size: 40px;
 	color: #5B6166;
 	position: absolute;
-	top: 13em;
-	left: 30%;
-	display: inline-block;
+    top: 10.4em;
+    right: -.6em;
+	display: inline;
 }
 span img {
 	width: 225px;
 	height: auto;
-	position: relative;
-	top: 5px;
 }
-
 /******************************************/
 /*ABOUT PAGE
 /******************************************/
 .about_page {
-	width: 1200px;
-	height: 0px;
-	margin-top: 15em;
+	width: 1214px;
+    height: 0px;
+    margin-top: 34em;
+    position: relative;
+    right: 65em;
 }
 
 .aboutNav {
@@ -279,80 +338,85 @@ span img {
   	top: 8.5em;
     left: .8em;
 }
-.aboutLogo,
-.historyLogo,
-.civilWarLogo {
+.aboutLogo {
 	width: 125px;
 	height: auto;
 	display: inline-block;
 	position: relative;
 }
 
-.aboutSearchbox,
-.historySearchbox,
+
+.historyLogo {
+	width: 125px;
+	height: auto;
+	display: inline-block;
+	position: relative;
+}
+
+.civilWarLogo {
+	width: 125px;
+	height: auto;
+	display: inline-block;
+	position: relative;
+}
+/* .aboutSearchButton {
+    position: relative;
+   
+  }*/
+
+.aboutSearchbox {
+	position: absolute;
+    bottom: -7em;
+    left: 8.5em;
+}
+
+.historySearchbox {
+	display: inline-block;
+	position: absolute;		
+	 top: 5.2em;
+    left: 132px;
+}
 .civilWarSearchbox {
 	display: inline-block;
 	position: absolute;		
-	top: 4.5em;
-    left: 140px;
+	top: 9.5em;
+    left: 12em;
 }
 
-.aboutSubjectsNav,
-.historySubjectsNav,
+.aboutSubjectsNav {
+	float: right;
+	display: inline-block;
+	position: relative;
+	bottom: -3em;
+    right: 1em;
+}
+.historySubjectsNav{
+	float: right;
+	display: inline-block;
+	position: relative;
+	top: 2.4em;
+    right: 3em;
+}
 .civilWarSubjectsNav {
 	float: right;
 	display: inline-block;
 	position: relative;
-	top: 2.5em;
+	top: 3.4em;
     right: 3em;
 }
-.aboutScience,
-.aboutHistory,
-.aboutArts,
-.aboutEnglish,
-.aboutMath,
-.aboutMore,
-.historyScience,
-.historyHistory,
-.historyArts,
-.historyEnglish,
-.historyMath,
-.historyMore,
-.civilWarScience,
-.civilWarHistory,
-.civilWarArts,
-.civilWarEnglish,
-.civilWarMath,
-.civilWarMore {
+.navIcon {
 	width: 75px;
 	height: auto;	
 	display: inline-block;
 }
-.aboutScience:hover,
-.aboutHistory:hover,
-.aboutArts:hover,
-.aboutEnglish:hover,
-.aboutMath:hover,
-.aboutMore:hover,
-.historyScience:hover,
-.historyHistory:hover,
-.historyArts:hover,
-.historyEnglish:hover,
-.historyMath:hover,
-.historyMore:hover,
-.civilWarScience:hover,
-.civilWarHistory:hover,
-.civilWarArts:hover,
-.civilWarEnglish:hover,
-.civilWarMath:hover,
-.civilWarMore:hover {
+.navIcon:hover {
 	opacity: .8;
 }
 
 .notepad {
 	background: url("../images/bio_notepad.jpg") center center no-repeat;
-	width: 100%;
-	height: 750px;
+	width: 1250px;
+	height: 837px;
 	background-size: cover;
 	position: relative;
     top: 20%;
@@ -362,7 +426,7 @@ span img {
 	height: 297px;
 	background-color: black;
 	position: absolute;
-    top: 14.5em;
+    top: 17em;
     left: 17em;
 }
 .profile_pic {
@@ -376,11 +440,11 @@ span img {
     width: 23%;
     height: 40%;
     font-family: 'Annie Use Your Telescope', serif;
-    font-size: 1em;
+    font-size: 1.04em;
     color: #454343;
     left: 54%;
     position: absolute;
-    bottom: 37.3%;
+    bottom: 37.6%;
     line-height: 1.5em;
   }
 
@@ -406,7 +470,8 @@ span img {
 }
 .historySearchButton {
 	position: relative;
-    top: .09em;
+    top: 0.15em;
+    right: .2em;
 }
 	.chalkboard {
 		width: 100%;
@@ -484,8 +549,9 @@ span img {
 	.eras_menu,
 	.wars_menu,
 	.presidents_menu {
-		margin-left: 1.5em;
-  		padding-top: 2em;		
+		margin-left: 5.5em;
+	    padding-top: 8em;
+	    margin-top: -3em;	
 	}
 	#era_name,
 	#war_name,
@@ -505,6 +571,7 @@ span img {
 	width: 100%;
 	height: 450px;
 	margin-top: 8em;
+	margin-bottom: 5em;
 }
 		.world_map {
 		width: 65%;
@@ -533,8 +600,9 @@ span img {
 		.world_eras_menu,
 		.regions_menu,
 		.modern_history_menu {
-		margin-left: 1.5em;
-  		padding-top: 2em;	
+		  	margin-left: 5.5em;
+    		padding-top: 8em;
+    		margin-top: -3em;
 	}
 		#world_era_name,
 		#region_name,
@@ -570,7 +638,8 @@ span img {
 }
 .civilWarSearchButton {
 	position: relative;
-	top: 0em;
+	 top: 0.1em;
+    right: .2em;
 }
 .history_directory a {
 	text-decoration: none;

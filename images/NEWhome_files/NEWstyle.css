@@ -1,0 +1,97 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+  clear: both;
+}
+
+.fl {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+@import url("fonts/webfonts/hello.myfonts.net/count/30843a");
+
+  
+@font-face {font-family: 'Drawzing';src: url('../fonts/webfonts/30843A_0_0.eot');src: url('../fonts/webfonts/30843A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/30843A_0_0.woff2') format('woff2'),url('../fonts/webfonts/30843A_0_0.woff') format('woff'),url('../fonts/webfonts/30843A_0_0.ttf') format('truetype');}
+ 
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/******************************************/
+/*HOME PAGE*/
+/******************************************/
+header {
+  width: 100%;
+  height: 8em;
+  border: 1px solid blue;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #cc0033;
+}
+h2 {
+  text-decoration: none;
+  font-size: 30px;
+  color: #cc0033;
+  font-family: 'Coming Soon', cursive;
+}
+.aboutLink:hover {
+  color: black;
+}
+.about {
+    margin-top: 1.7em;
+    margin-left: 6em;
+}
+
+.searchbox {
+  width: 20em;
+  height: 3em;
+  float: right;
+  margin-right: 8em;
+}
+  input {
+    width: 300px;
+    height: 28px;
+    background-color: #e6e6e6;
+    display: inline-block;
+    font-family: 'Book Antiqua', times;
+    border: 1.5px solid #cc0033;
+    text-align: left;
+    padding-left: 5px;
+  }
+  button {
+    width: 100px;
+    height: 36px;
+    font-size: 25px !important;
+    color: #cc0033;
+    font-family: 'Coming Soon', cursive !important;
+    border: 1px solid #cc0033;;
+    background-color: #e6e6e6;
+    position: absolute;
+    margin-left: 7.65em;
+  }
+  button:hover {
+    color: black;
+  }

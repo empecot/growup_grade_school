@@ -9,85 +9,94 @@
 <link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 
+
 </head>
 
 <body class="body_home">
 <header>
-	<h2>
-		<a class="about" href="#">about</a>
-	</h2>
-	<div class="searchbox fadeInSearchbox">
-		<div class="home_searchbox">
+<h2 class="about">
+<a class="aboutLink" href="#">about</a>
+</h2>
+<div class="searchbox fadeInSearchbox">
 
-		<form action="pages/civilwar.html" method="get">
+<form action="pages/civilwar.html" method="get">
 			<input type="text" name="search" class="searchbox" placeholder="search by subject, grade level, anything!"></input>
-			<button>search</button>
+			<button class="homeSearch">search</button>
 			</form>
-		</div>
-	</div>
-	<br/>
-	
+</div>
 </header>
 
 <div class="main">
-		<div id="logo"><img src="images/grownup-gradeschoollogo.jpg"></div>
-<div class="subjects_home test">	
-	<div class="science">
-		<a class="icons" href="#">
-		<img src="images/science.jpeg">
-		<span class="science_title">SCIENCE</span>
-		</a>
+	<div class="subjectIconsLeft">
+
+		<div class="science iconDivs">
+			<span class="scienceTitle titles">SCIENCE</span>
+			<a class="icons" href="#">
+			<img class="scienceIcon subjectPics" src="images/science.png">
+			</a>
+		</div>
+		<div class="history iconDivs">
+			<span class="historyTitle titles">HISTORY</span>
+			<a class="icons" href="pages/history.html">
+			<img class="historyIcon subjectPics" src="images/history.png">
+			</a>
+		</div>
+		<div class="arts iconDivs">
+			<span class="artsTitle titles">ARTS</span>
+			<a class="icons" href="#">
+			<img class="artsIcon subjectPics" src="images/articon.png">
+			</a>
+		</div>
 	</div>
+
+		<div class="pencil fadeInPencils">
+			<div class="leftPencils">
+				<div id="pencil1"><img src="images/pencil-23657_1280.png"></div>
+				<div id="pencil2"><img src="images/pencil-23657_1280.png"></div>
+				<div id="pencil3"><img src="images/pencil-23657_1280.png"></div>
+			</div>
+		</div>
+
+	<img class="logoHome" src="images/grownup-gradeschoollogo.jpg">
 		
-	<div class="history">
-		<a class="icons" href="pages/history.html">
-		<img src="images/history.jpg">
-		<span class="history_title">HISTORY</span>
-		</a>
+		<div class="pencil fadeInPencils">
+			<div class="rightPencils">	
+				<div id="pencil4"><img src="images/pencil-23657_1280.png"></div>
+				<div id="pencil5"><img src="images/pencil-23657_1280.png"></div>
+				<div id="pencil6"><img src="images/pencil-23657_1280.png"></div>
+			</div>	
+		</div>
+
+	<div class="subjectIconsRight">
+
+		<div class="english iconDivs">
+			<span class="englishTitle titles">ENGLISH</span>
+			<a class="icons" href="#">
+			<img class="englishIcon subjectPics" src="images/englishicon.png">
+			</a>
+
+		<div class="math iconDivs">
+			<span class="mathTitle titles">MATH</span>
+			<a class="icons" href="#">
+			<img class="mathIcon subjectPics" src="images/math.png">
+			</a>
+
+
+		<div class="more iconDivs">
+			<span class="moreTitle titles">MORE</span>
+			<a class="icons" href="#">
+			<img class="moreIcon subjectPics" src="images/more.png">
+			</a>
+		</div>
+
 	</div>
 
-	<div class="arts">
-		<a class="icons" href="#">
-		<img src="images/articon.png">
-		<span class="arts_title">ARTS</span>
-		</a>
-	</div>
-	
-	<div class="english">
-		<a class="icons" href="#">
-		<img src="images/englishicon.jpg">
-		<span class="english_title">ENGLISH</span>
-		</a>
-	</div>
-	
-	<div class="math">
-		<a class="icons" href="#">
-		<img src="images/math.jpg">
-		<span class="math_title">MATH</span>
-		</a>
-	</div>
-	
-	<div class="more">
-		<a class="icons" href="#">
-		<img src="images/more.png">
-		<span class="more_title">MORE</span>
-		</a>
-	</div>
+	<div class='tagline'>
+		Go <span id="backtoschool"><img src="images/backtoschool.jpg"></span> all over again
+	</div> 
+
 </div>
 
-	<div class="pencil fadeInPencils">
-		<div id="pencil1"><img src="images/pencil-23657_1280.png"></div>
-		<div id="pencil2"><img src="images/pencil-23657_1280.png"></div>
-		<div id="pencil3"><img src="images/pencil-23657_1280.png"></div>
-		<div id="pencil4"><img src="images/pencil-23657_1280.png"></div>
-		<div id="pencil5"><img src="images/pencil-23657_1280.png"></div>
-		<div id="pencil6"><img src="images/pencil-23657_1280.png"></div>
-	</div>
-</div>
-
-<div id="tagline" class='tagline'>
-	Go <span id="backtoschool"><img src="images/backtoschool.jpg"></span> all over again
-</div> 
 
 <!-- /******************************************/
 /*ABOUT PAGE*/
@@ -100,22 +109,22 @@
 
 		<div class="aboutSearchbox">
 		<input></input>
-		<button>search</button>
+		<button class: "aboutSearchButton">search</button>
 		</div>
 
 		<div class="aboutSubjectsNav">
 
-			<a href="#"><img class="aboutScience" src="images/science.png"></a>
+			<a href="#"><img class="navIcon" src="images/science.png"></a>
 
-			<a href="pages/history.html"><img class="aboutHistory" src="images/history.png"></a>
+			<a href="pages/history.html"><img class="navIcon" src="images/history.png"></a>
 
-			<a href="#"><img class="aboutArts" src="images/articon.png"></a>
+			<a href="#"><img class="navIcon" src="images/articon.png"></a>
 
-			<a href="#"><img class="aboutEnglish" src="images/englishicon.png"></a>
+			<a href="#"><img class="navIcon" src="images/englishicon.png"></a>
 
-			<a href="#"><img class="aboutMath" src="images/math.png"></a>
+			<a href="#"><img class="navIcon" src="images/math.png"></a>
 
-			<a href="#"><img class="aboutMore" src="images/more.png"></a>
+			<a href="#"><img class="navIcon" src="images/more.png"></a>
 		</div>
 	</nav>
 

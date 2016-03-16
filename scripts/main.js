@@ -6,10 +6,10 @@ console.log( "hello, wrold" );
 
 // // Home Page--on load, start with apple logo, then fade in subjects then pencils
 
-//  $(".test").fadeTo(0, 0);
-// setTimeout(function(){ 
-//         $(".test").fadeTo(500, 1)
-// }, 1000);
+ $(".test").fadeTo(0, 0);
+setTimeout(function(){ 
+        $(".test").fadeTo(500, 1)
+}, 1000);
 
 
  $(".fadeInSearchbox").fadeTo(0, 0);

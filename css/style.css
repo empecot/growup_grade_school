@@ -321,6 +321,7 @@ span img {
 /******************************************/
 /*ABOUT PAGE
 /******************************************/
+
 .about_page {
 	width: 1214px;
     height: 0px;
@@ -458,7 +459,7 @@ span img {
 }
 .historyNav {
 	position: fixed;
-	bottom: 33.2em;
+	bottom: 32em;
 	background-color: white;
 	width: 100%;
 	height: 18%;
@@ -624,7 +625,7 @@ span img {
 /******************************************/
 
 .civilWarNav {
-	margin-top: 1em;
+	margin-top: 1.5em;
 	position: fixed;
 	bottom: 33em;
 	background-color: white;
@@ -638,7 +639,7 @@ span img {
 }
 .civilWarSearchButton {
 	position: relative;
-	 top: 0.1em;
+	 top: 0.07em;
     right: .2em;
 }
 .history_directory a {
@@ -753,6 +754,23 @@ span img {
 .cvKeys:hover {
 	 color: #cc0033;
 }
+/*.scrollToTopAbout {
+	text-align:center; 
+	background: white;
+	font-weight: bold;
+	font-size: 32px;
+    color: #cc0033;
+    text-decoration: none;
+    position: fixed;
+    top: 19em;
+    right: 2em;
+    font-family: 'Coming Soon', cursive;
+    display: none;
+}
+.scrollToTopAbout:hover{
+	text-decoration:none;
+	color: black;
+}*/
 .scrollToTop{
 	text-align:center; 
 	background: white;
@@ -770,3 +788,111 @@ span img {
 	text-decoration:none;
 	color: black;
 }
+
+
+@media only screen and (max-width: 767px) {
+
+/******************************************/
+/*HOME PAGE*/
+/******************************************/
+
+.searchbox {
+	margin-right: 4em;
+
+}
+.leftPencils,
+.rightPencils {
+	display: none;
+}
+.subjectIconsLeft {
+	margin-left: 0;
+}
+.logoHome {
+	left: 13.5em;
+	top: 9em;
+}
+.subjectIconsRight {
+	left: 37em;
+}
+.about {
+	margin-left: 2.5em;
+}
+.tagline {
+	top: 11.9em;
+    right: -5.6em;
+}
+
+/******************************************/
+/*ABOUT PAGE
+/******************************************/
+.about_page {
+	margin-top: 33em;
+}
+.aboutSubjectsNav {
+	display: none;
+}
+.notepad {
+	width: 52em;
+    left: 27em;
+}
+.blackborder {
+	left: 4em;
+}
+.aboutNav {
+	top: 9.9em;    
+	left: 27.8em;
+}
+.aboutLogo {
+	left: 1em;
+}
+.aboutSearchbox {
+	left: 21em;
+	bottom: -7.2;
+}
+.bio {
+	 width: 34%;
+    height: 40%;
+    font-family: 'Annie Use Your Telescope', serif;
+    font-size: 1.075em;
+    color: #454343;
+    left: 56%;
+    position: absolute;
+    bottom: 35.6%;
+    line-height: 1.46em;
+}
+/******************************************/
+/*HISTORY MAIN PAGE*/
+/******************************************/
+
+.historySubjectsNav {
+	display: none;
+}
+.historySearchButton {
+	top: .16em;
+}
+
+/***************************************/
+/*CIVIL WAR PAGE*/
+/******************************************/
+.civilWarSearchbox {
+	left: 24em;
+}
+.civilWarSearchButton {
+	top: .08em;
+}
+.civilWarSubjectsNav {
+	display: none;
+}
+.civil_war_aside {
+	display: none;
+}
+.civil_war_body{
+	margin-right: -8em;
+}
+.chalkboardImg img {
+	width: 200px;
+	height: auto;
+}
+
+}
+

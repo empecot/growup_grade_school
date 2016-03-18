@@ -9,52 +9,46 @@ console.log( "hello, wrold" );
  $(".test").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".test").fadeTo(500, 1)
-}, 1000);
+}, 300);
 
 
  $(".fadeInSearchbox").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".fadeInSearchbox").fadeTo(500, 1)
-}, 3000);
+}, 2000);
 
 
  $(".about").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".about").fadeTo(850, 1)
-}, 3000);
+}, 2000);
 
 
  $(".tagline").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".tagline").fadeTo(500, 1)
-}, 3000);
+}, 2000);
 		
 
  $(".fadeInPencils").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".fadeInPencils").fadeTo(500, 1)
-}, 2000);
-		
-$('.science').on('hover', function(){
-	$('.science').append('SCIENCE');
-	console.log('hola');
+}, 1000);
+
+
+$('.iconDivs').on('mouseenter', function(){
+  $(this).find('.titles').css('display', 'block');
 });
 
-
+$('.iconDivs').on('mouseleave', function(){
+  $(this).find('.titles').css('display', 'none');
+});
 
 // Home Page--"About" button--onclick, smooth scroll down to About Page
 $('.about').on('click', function(){
- 	 $('html, body').animate({scrollTop:775}, 'slow');
+ 	 $('html, body').animate({scrollTop:760}, 'slow');
  });
-
-// Show text over icons on hover
-   // $(".science").hover(
-   //      function () {
-   //          $(this).find("science_title").text("SCIENCE");
-   //      },
-   //      function () { 
-   //          $(this).find("science_title").text("SCIENCE");
-   //      });
+     
 
 // About Page--logo, onclick smooth scroll up to home page
 $('.about_logo').on('click', function(){
@@ -69,8 +63,7 @@ $('.about_logo').on('click', function(){
 
 // History Page--"US History" button, onclick smoothscroll to US History
 // // History Page--"World History" button, onclick smoothscroll to World History
-
-  $(function(){
+   $(function(){
       $(".history_head").typed({
         strings: ["HISTORY"],
         typeSpeed: 150

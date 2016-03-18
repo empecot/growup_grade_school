@@ -167,6 +167,7 @@ form {
     color: #cc0033;
     display: none;
 }
+
 .scienceTitle {
 	position: absolute;
 	top: 2.1em;
@@ -217,13 +218,13 @@ form {
 }
 .math {
 	position: absolute;
-	left: 1em;
-	margin-top: 2em;
+    left: 0em;
+    margin-top: 10em;
 }
 .more {
-	top: 11.4em;
+	top: 21.5em;
     position: absolute;
-    right: 2.5em;
+    right: 4.5em;
 }
 
 .pencil img {
@@ -310,8 +311,8 @@ form {
 	font-size: 40px;
 	color: #5B6166;
 	position: absolute;
-    top: 10.4em;
-    right: -.6em;
+    top: 12.4em;
+    right: 1.8em;
 	display: inline;
 }
 span img {
@@ -325,9 +326,9 @@ span img {
 .about_page {
 	width: 1214px;
     height: 0px;
-    margin-top: 34em;
+    margin-top: 2em;
     position: relative;
-    right: 65em;
+    right: 0em;
 }
 
 .aboutNav {
@@ -336,7 +337,7 @@ span img {
 	display: inline-block;
 	position: relative;
   	z-index: 9999;
-  	top: 8.5em;
+  	top: 9.5em;
     left: .8em;
 }
 .aboutLogo {
@@ -360,10 +361,11 @@ span img {
 	display: inline-block;
 	position: relative;
 }
-/* .aboutSearchButton {
+ .aboutSearchButton {
     position: relative;
+    top: 2em;
    
-  }*/
+  }
 
 .aboutSearchbox {
 	position: absolute;
@@ -893,6 +895,5 @@ span img {
 	width: 200px;
 	height: auto;
 }
-
 }
 

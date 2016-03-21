@@ -85,32 +85,35 @@ button {
     width: 20em;
     height: 2.25em;
     float: right;
-    margin-right: 8em;
+    margin-right: 4em;
     margin-bottom: 0em;
 }
 form {
     margin: -64px;
 }
   input {
-    width: 300px;
+width: 289px;
     height: 40px;
     background-color: #e6e6e6;
+    font-size: 15px;
     display: inline-block;
     font-family: 'Book Antiqua', times;
     border: 1.5px solid #cc0033;
     text-align: left;
     padding-left: 5px;
-  }
+    margin-right: 49px;
+}
+
   .homeSearch {
     width: 100px;
-    height: 40px;
+    height: 44px;
     font-size: 25px !important;
     color: #cc0033;
     font-family: 'Coming Soon', cursive !important;
     border: 1px solid #cc0033;
     background-color: #e6e6e6;
     position: absolute;
-    margin-left: 12.1em;  
+    margin-left: -2em;  
   }
   button:hover {
     color: black;
@@ -337,7 +340,7 @@ span img {
     margin-top: 2em;
     position: relative;
     right: .5em;
-    border: 1px solid #5B6166;
+    /*border: 1px solid #5B6166;*/
 }
 .aboutNav {
 	width: 100%;
@@ -371,7 +374,8 @@ span img {
 }
  .aboutSearchButton {
     position: relative;
-    top: 2em;
+    top: 0.08em;
+    right: 2.2em;
    
   }
 
@@ -380,40 +384,12 @@ span img {
     bottom: -7em;
     left: 8.5em;
 }
-
-.historySearchbox {
-	display: inline-block;
-	position: absolute;		
-	 top: 4.2em;
-    left: 132px;
-}
-.civilWarSearchbox {
-	display: inline-block;
-	position: absolute;		
-	top: 9.5em;
-    left: 12em;
-}
-
 .aboutSubjectsNav {
 	float: right;
 	display: inline-block;
 	position: relative;
 	bottom: -2.5em;
     right: 1em;
-}
-.historySubjectsNav{
-	float: right;
-	display: inline-block;
-	position: relative;
-	top: 2.4em;
-    right: 3em;
-}
-.civilWarSubjectsNav {
-	float: right;
-	display: inline-block;
-	position: relative;
-	top: 3.4em;
-    right: 3em;
 }
 .navIcon {
 	width: 75px;
@@ -469,7 +445,7 @@ span img {
 
 .mobile_chalkboard_page {
 	display: none;
-    width: 44em;
+    width: 41em;
     text-align: center;
     position: relative;
     left: 2em;
@@ -488,10 +464,25 @@ span img {
     margin: 0.67em 0;
     position: absolute;
     top: .8em;
-    left: 1.3em;
+    left: 1.1em;
     letter-spacing: .1em;
 }
 
+
+.historySearchbox {
+	display: inline-block;
+	position: absolute;		
+	 top: 5.5em;
+    left: 132px;
+}
+
+.historySubjectsNav{
+	float: right;
+	display: inline-block;
+	position: relative;
+	top: 2.4em;
+    right: 3em;
+}
 
 .history_main {
 	width: 1200px;
@@ -511,8 +502,8 @@ span img {
 }
 .historySearchButton {
 	position: relative;
-    top: 0.15em;
-    right: .2em;
+    top: 0.08em;
+    right: 2.2em;
 }
 	.chalkboard {
 		width: 100%;
@@ -677,10 +668,23 @@ span img {
     padding-top: 1em;
     padding-bottom: 1em;
 }
+.civilWarSearchbox {
+	display: inline-block;
+	position: absolute;		
+	top: 9.5em;
+    left: 12em;
+}
+.civilWarSubjectsNav {
+	float: right;
+	display: inline-block;
+	position: relative;
+	top: 3.4em;
+    right: 3em;
+}
 .civilWarSearchButton {
 	position: relative;
-	 top: 0.07em;
-    right: .2em;
+	top: 0.1em;
+    right: 2.2em;
 }
 .history_directory a {
 	text-decoration: none;
@@ -839,9 +843,9 @@ span img {
 .homepage {
 	margin-bottom: 8em;
 }
-.searchbox {
-	margin-right: 6em;
-	width: 17em;
+.search {
+	margin-right: 3em;
+    width: 19em;
 }
 .leftPencils,
 .rightPencils {
@@ -941,14 +945,14 @@ span img {
 	display: none;
 }
 .historySearchButton {
-	top: .16em;
+	top: .10em;
 }
 
 /***************************************/
 /*CIVIL WAR PAGE*/
 /******************************************/
 .civilWarSearchbox {
-	left: 24em;
+	left: 12.5em;
 }
 .civilWarSearchButton {
 	top: .08em;

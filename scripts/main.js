@@ -6,9 +6,9 @@ console.log( "hello, wrold" );
 
 // // Home Page--on load, start with apple logo, then fade in subjects then pencils
 
-$(".searchbox").on('submit', function(e){
+$(".searchForm").on('submit', function(e){
   e.preventDefault();
-  var searchTerms = $('.searchbox').val().toLowerCase();
+  var searchTerms = $('.searchForm').val().toLowerCase();
 
    if (searchTerms === "civil war" || searchTerms === 'abraham lincoln' || searchTerms === 'slavery') {
          window.location = '../pages/civilwar.html';

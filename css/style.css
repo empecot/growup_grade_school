@@ -42,6 +42,12 @@
 /******************************************/
 /*HOME PAGE*/
 /******************************************/
+.homepage {
+	border: double 10px black;
+	padding-bottom: 3em;
+	margin-left: 1px;
+	margin-top: 2px;
+}
 
 header {
   width: 100%;
@@ -72,14 +78,14 @@ button {
 }
 .about {
     margin-top: 1em;
-    margin-left: 7em;
+    margin-left: 6em;
 }
 
 .searchbox {
     width: 20em;
     height: 2.25em;
     float: right;
-    margin-right: 9em;
+    margin-right: 8em;
     margin-bottom: 0em;
 }
 form {
@@ -113,8 +119,8 @@ form {
 .subjectIconsLeft {
   width: 10em;
   height: 30em;
-  margin-left: 5em;
-  margin-top: -1em;
+  margin-left: 2.7em;
+  margin-top: -.3em;
 }
 
 .logoHome {
@@ -122,15 +128,15 @@ form {
   height: auto;
   display: block;
   position: absolute;
-  left: 29em;
-  top: 8em;
+  left: 27.5em;
+  top: 7em;
 }
 .subjectIconsRight {
     width: 10em;
     height: 30em;
     position: absolute;
-    left: 65em;
-    top: 6.3em;
+    left: 63.5em;
+    top: 7.7em;
 }
 
 .iconDivs {
@@ -237,8 +243,8 @@ form {
     height: 30em;
     float: left;
     position: absolute;
-    top: 8em;
-    left: 15em;
+    top: 9em;
+    left: 13.5em;
     z-index: 1;
 }
 .rightPencils {
@@ -246,8 +252,8 @@ form {
     height: 30em;
     float: right;
     position: absolute;
-    left: 49em;
-    top: 9em;
+    left: 47.5em;
+    top: 10em;
 }
 	#pencil1 img {
 		position: absolute;
@@ -311,8 +317,8 @@ form {
 	font-size: 40px;
 	color: #5B6166;
 	position: absolute;
-    top: 12.4em;
-    right: 1.8em;
+    top: 13em;
+    right: 2.3em;
 	display: inline;
 }
 span img {
@@ -322,22 +328,24 @@ span img {
 /******************************************/
 /*ABOUT PAGE
 /******************************************/
-
+.mobileAboutPage {
+	display: none;
+}
 .about_page {
 	width: 1214px;
     height: 0px;
     margin-top: 2em;
     position: relative;
-    right: 0em;
+    right: .5em;
+    border: 1px solid #5B6166;
 }
-
 .aboutNav {
 	width: 100%;
 	height: 18%;
 	display: inline-block;
 	position: relative;
   	z-index: 9999;
-  	top: 9.5em;
+  	top: 10em;
     left: .8em;
 }
 .aboutLogo {
@@ -376,7 +384,7 @@ span img {
 .historySearchbox {
 	display: inline-block;
 	position: absolute;		
-	 top: 5.2em;
+	 top: 4.2em;
     left: 132px;
 }
 .civilWarSearchbox {
@@ -390,7 +398,7 @@ span img {
 	float: right;
 	display: inline-block;
 	position: relative;
-	bottom: -3em;
+	bottom: -2.5em;
     right: 1em;
 }
 .historySubjectsNav{
@@ -419,7 +427,8 @@ span img {
 .notepad {
 	background: url("../images/bio_notepad.jpg") center center no-repeat;
 	width: 1250px;
-	height: 837px;
+	height: 750px;
+	background-position: top;
 	background-size: cover;
 	position: relative;
     top: 20%;
@@ -430,7 +439,7 @@ span img {
 	background-color: black;
 	position: absolute;
     top: 17em;
-    left: 17em;
+    left: 18em;
 }
 .profile_pic {
 	width: 20%;
@@ -445,15 +454,44 @@ span img {
     font-family: 'Annie Use Your Telescope', serif;
     font-size: 1.04em;
     color: #454343;
-    left: 54%;
+    left: 53.5%;
     position: absolute;
-    bottom: 37.6%;
+    bottom: 35.5%;
     line-height: 1.5em;
   }
-
+.session {
+	font-size: 1.2em;
+	font-weight: bold;
+}
 /******************************************/
 /*HISTORY MAIN PAGE*/
 /******************************************/
+
+.mobile_chalkboard_page {
+	display: none;
+    width: 44em;
+    text-align: center;
+    position: relative;
+    left: 2em;
+    top: 7em;
+    font-family: 'Drawzing';
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10em;
+    margin-top: 3em;
+    margin-right: -5em;
+}
+
+.mobile_history_head {
+    color: #f4f4f0;
+    font-weight: normal;
+    font-size: 6.5em;
+    margin: 0.67em 0;
+    position: absolute;
+    top: .8em;
+    left: 1.3em;
+    letter-spacing: .1em;
+}
+
 
 .history_main {
 	width: 1200px;
@@ -461,10 +499,10 @@ span img {
 }
 .historyNav {
 	position: fixed;
-	bottom: 32em;
+	bottom: 33.5em;
 	background-color: white;
 	width: 100%;
-	height: 18%;
+	height: 15%;
 	display: inline-block;
   	z-index: 9999;
     left: .8em;
@@ -525,7 +563,7 @@ span img {
 .ushistory_main {
 	width: 100%;
 	height: 500px;
-	margin-bottom: 20em;
+	margin-bottom: 21em;
 }
 
 	.us_map {
@@ -573,7 +611,7 @@ span img {
 .worldhistory_main {
 	width: 100%;
 	height: 450px;
-	margin-top: 8em;
+	margin-top: 9em;
 	margin-bottom: 5em;
 }
 		.world_map {
@@ -756,7 +794,7 @@ span img {
 .cvKeys:hover {
 	 color: #cc0033;
 }
-/*.scrollToTopAbout {
+.scrollToTopAbout {
 	text-align:center; 
 	background: white;
 	font-weight: bold;
@@ -767,12 +805,13 @@ span img {
     top: 19em;
     right: 2em;
     font-family: 'Coming Soon', cursive;
+    border: 1px solid #cc0033;
     display: none;
 }
 .scrollToTopAbout:hover{
 	text-decoration:none;
 	color: black;
-}*/
+}
 .scrollToTop{
 	text-align:center; 
 	background: white;
@@ -797,74 +836,106 @@ span img {
 /******************************************/
 /*HOME PAGE*/
 /******************************************/
-
+.homepage {
+	margin-bottom: 8em;
+}
 .searchbox {
-	margin-right: 4em;
-
+	margin-right: 6em;
+	width: 17em;
 }
 .leftPencils,
 .rightPencils {
 	display: none;
 }
 .subjectIconsLeft {
-	margin-left: 0;
+	margin-left: -6px;
 }
 .logoHome {
-	left: 13.5em;
-	top: 9em;
+	left: 13em;
+	top: 10em;
 }
 .subjectIconsRight {
-	left: 37em;
+	left: 36.5em;
+}
+.history {
+	margin-top: 1em;
+}
+.arts {
+	margin-top: -2em;
+}
+.math {
+	margin-top: 9em;
+}
+.more {
+	margin-top: -3em;
 }
 .about {
 	margin-left: 2.5em;
 }
 .tagline {
-	top: 11.9em;
-    right: -5.6em;
+	top: 14em;
+    right: 2.5em;
+    width: 539px;
 }
 
 /******************************************/
 /*ABOUT PAGE
 /******************************************/
 .about_page {
-	margin-top: 33em;
-}
-.aboutSubjectsNav {
 	display: none;
 }
-.notepad {
-	width: 52em;
-    left: 27em;
+.mobileAboutPage {
+	width: 767px;
+	background: url("../images/mobile_about_page.jpg") center center no-repeat;
+	height: 750px;
+	background-size: cover;
+	position: relative;
+    top: 20%;
+    display: block;
 }
-.blackborder {
-	left: 4em;
-}
-.aboutNav {
-	top: 9.9em;    
-	left: 27.8em;
-}
-.aboutLogo {
-	left: 1em;
-}
-.aboutSearchbox {
-	left: 21em;
-	bottom: -7.2;
-}
-.bio {
-	 width: 34%;
-    height: 40%;
+.mobileBio {
+	margin-top: 5em;
+    width: 44%;
+    height: 22%;
     font-family: 'Annie Use Your Telescope', serif;
-    font-size: 1.075em;
+    font-size: 1.2em;
     color: #454343;
-    left: 56%;
+    left: 53.5%;
     position: absolute;
-    bottom: 35.6%;
-    line-height: 1.46em;
-}
+    left: 11em;
+    top: 1em;
+    line-height: 1.5em;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
 /******************************************/
 /*HISTORY MAIN PAGE*/
 /******************************************/
+.ushistory_main {
+	margin-bottom: 0px;
+}
+.chalkboard {
+	display: none;
+}
+.mobile_chalkboard_page {
+	display: block;
+}
+
+.us_map {
+	display: none;
+}
+.us_history_body {
+	float: left;
+    height: 362px;
+    margin-top: 56px;
+    margin-left: 18px;
+}
+.world_map {
+	display: none;
+}
 
 .historySubjectsNav {
 	display: none;
@@ -896,4 +967,6 @@ span img {
 	height: auto;
 }
 }
+
+
 

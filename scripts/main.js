@@ -6,6 +6,17 @@ console.log( "hello, wrold" );
 
 // // Home Page--on load, start with apple logo, then fade in subjects then pencils
 
+$(".searchbox").on('submit', function(e){
+  e.preventDefault();
+  var searchTerms = $('.searchbox').val().toLowerCase();
+
+   if (searchTerms === "civil war" || searchTerms === 'abraham lincoln' || searchTerms === 'slavery') {
+         window.location = '../pages/civilwar.html';
+    }
+    console.log('yo!');
+});
+
+
  $(".test").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".test").fadeTo(500, 1)
@@ -46,7 +57,7 @@ $('.iconDivs').on('mouseleave', function(){
 
 // Home Page--"About" button--onclick, smooth scroll down to About Page
 $('.about').on('click', function(){
- 	 $('html, body').animate({scrollTop:760}, 'slow');
+ 	 $('html, body').animate({scrollTop:850}, 'slow');
  });
      
 
@@ -55,7 +66,20 @@ $('.about_logo').on('click', function(){
 	$('html, body').animate({scrollTop: 0}, 'slow');
 	return false;
 });
+  
 
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTopAbout').fadeIn();
+    } else {
+      $('.scrollToTopAbout').fadeOut();
+    }
+  });  
+$('.scrollToTopAbout').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+    console.log ('whassup');
+  });
 
 /******************************************/
 /*HISTORY MAIN PAGE*/
@@ -87,7 +111,8 @@ $('.us_history_button').on('click', function(){
 
 
 $('.world_history_button').on('click', function(){
- 	 $('html, body').animate({scrollTop:2000}, 'slow');
+ 	 $('html, body').animate({scrollTop:1350}, 'slow');
+   console.log('us history hello!');
  });	 
 
 $('.historyHistory').on('click', function(){
@@ -102,7 +127,7 @@ var eras = ['Early America to 1630', 'The Colonial Period 1630-1763', 'Revolutio
 'The New Deal & World War II 1933-1945', 'Postwar America 1945-1960',
 'The Vietnam Era 1960-1980', 'End of the Century 1980-2000', 'The New Millenium 2001-']
 
-$('#era_name').append('<option>CHRONOLOGICAL ERAS</option>')
+$('#era_name').append('<option>ERAS</option>')
 
 for (var i = 0; i < eras.length; i++) {
 	$('#era_name').append('<option value='+eras [i]+'>' +eras [i]+ '</option>');	

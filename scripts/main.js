@@ -8,10 +8,10 @@ console.log( "hello, wrold" );
 
 $(".searchForm").on('submit', function(e){
   e.preventDefault();
-  var searchTerms = $('.searchForm').val().toLowerCase();
+  var searchTerms = $('.search').val().toLowerCase();
 
    if (searchTerms === "civil war" || searchTerms === 'abraham lincoln' || searchTerms === 'slavery') {
-         window.location = '../pages/civilwar.html';
+         window.location = 'pages/civilwar.html';
     }
     console.log('yo!');
 });
@@ -93,6 +93,16 @@ $('.scrollToTopAbout').click(function(){
         typeSpeed: 150
       });
   });
+
+$(".historySearchbox").on('submit', function(e){
+  e.preventDefault();
+  var searchTerms = $('.search').val().toLowerCase();
+
+   if (searchTerms === "civil war" || searchTerms === 'abraham lincoln' || searchTerms === 'slavery') {
+         window.location = 'civilwar.html';
+    }
+    console.log('yo!');
+});
 
  $(".us_history_button").fadeTo(0, 0);
 setTimeout(function(){ 

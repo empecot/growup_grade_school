@@ -26,27 +26,20 @@ setTimeout(function(){
  $(".fadeInSearchbox").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".fadeInSearchbox").fadeTo(500, 1)
-}, 2000);
+}, 1000);
 
 
  $(".about").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".about").fadeTo(850, 1)
-}, 2000);
+}, 1000);
 
 
  $(".tagline").fadeTo(0, 0);
 setTimeout(function(){ 
         $(".tagline").fadeTo(500, 1)
-}, 2000);
-		
-
- $(".fadeInPencils").fadeTo(0, 0);
-setTimeout(function(){ 
-        $(".fadeInPencils").fadeTo(500, 1)
 }, 1000);
-
-
+		
 $('.iconDivs').on('mouseenter', function(){
   $(this).find('.titles').css('display', 'block');
 });
@@ -81,6 +74,10 @@ $('.scrollToTopAbout').click(function(){
     console.log ('whassup');
   });
 
+ $(".fadeInPencils").fadeTo(0, 0);
+setTimeout(function(){ 
+        $(".fadeInPencils").fadeTo(500, 1)
+}, 500);
 /******************************************/
 /*HISTORY MAIN PAGE*/
 /******************************************/
@@ -89,6 +86,13 @@ $('.scrollToTopAbout').click(function(){
 // // History Page--"World History" button, onclick smoothscroll to World History
    $(function(){
       $(".history_head").typed({
+        strings: ["HISTORY"],
+        typeSpeed: 150
+      });
+  });
+
+   $(function(){
+      $(".mobile_history_head").typed({
         strings: ["HISTORY"],
         typeSpeed: 150
       });
@@ -103,6 +107,31 @@ $(".historySearchbox").on('submit', function(e){
     }
     console.log('yo!');
 });
+
+ $(".downArrow").fadeTo(0, 0);
+setTimeout(function(){ 
+        $(".downArrow").fadeTo (850, 1)
+}, 1000);
+
+
+$(".downArrow").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".downArrow").offset().top +450 },
+        'slow');
+    console.log('whassup');
+});    
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.mobileScrollToTop').fadeIn();
+    } else {
+      $('.mobileScrollToTop').fadeOut();
+    }
+  });
+  $('.mobileScrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
 
  $(".us_history_button").fadeTo(0, 0);
 setTimeout(function(){ 
@@ -316,3 +345,5 @@ $(window).scroll(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
 	});
+
+

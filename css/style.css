@@ -467,7 +467,36 @@ span img {
     left: 1.1em;
     letter-spacing: .1em;
 }
+.downArrow {
+	font-size: 5em;
+    color: #f4f4f0;
+    position: absolute;
+    left: 3.8em;
+    bottom: 3em;
+    font-family: 'Drawzing';
+}
+.downArrow:hover {
+	color: #cc0033;
 
+}
+
+.mobileScrollToTop{
+	text-align:center; 
+	background: white;
+	font-weight: bold;
+	font-size: 32px;
+    color: #cc0033;
+    text-decoration: none;
+    position: fixed;
+    top: 19em;
+    right: 2em;
+    font-family: 'Coming Soon', cursive;
+    display: none;
+}
+.mobileScrollToTop:hover{
+	text-decoration:none;
+	color: black;
+}
 
 .historySearchbox {
 	display: inline-block;
@@ -490,7 +519,7 @@ span img {
 }
 .historyNav {
 	position: fixed;
-	bottom: 33.5em;
+	bottom: 34.5em;
 	background-color: white;
 	width: 100%;
 	height: 15%;
@@ -927,7 +956,9 @@ span img {
 .mobile_chalkboard_page {
 	display: block;
 }
-
+.mobileScrollToTop {
+	display: block;
+}
 .us_map {
 	display: none;
 }
@@ -945,17 +976,22 @@ span img {
 	display: none;
 }
 .historySearchButton {
-	top: .10em;
+	top: .08em;
 }
-
+.historyNav {
+	bottom: 33.5em;
+}
+.historySearchbox {
+	left: 24em;
+}
 /***************************************/
 /*CIVIL WAR PAGE*/
 /******************************************/
 .civilWarSearchbox {
-	left: 12.5em;
+	left: 22.5em;
 }
 .civilWarSearchButton {
-	top: .08em;
+	top: .09em;
 }
 .civilWarSubjectsNav {
 	display: none;
@@ -972,5 +1008,57 @@ span img {
 }
 }
 
+/*
+@media only screen and (min-width: 375px) and (max-width: 667px) {
 
-
+/******************************************/
+/*HOME PAGE*/
+/******************************************/
+/*.homepage {
+	height: 590px;
+}
+h2 {
+  text-decoration: none;
+  font-size: 25px;
+  color: #cc0033;
+  font-family: 'Coming Soon', cursive;
+}
+.searchbox {
+	display: none;
+}
+.pencil {
+	display: none;
+}
+.subjectIconsLeft {
+  width: 15em;
+  height: 5em;
+  margin-left: 0em;
+  margin-top: 17em;
+  display: inline-block;
+}
+.science {
+	float: left;
+}
+.history {
+	float: left;
+}
+.arts {
+	float: left;
+}
+.logoHome {
+	left: 1.1em;
+    top: 6em;
+}
+.subjectIconsRight {
+	display: inline-block;
+}
+.iconDivs {
+  width: 75px;
+  height: auto;
+  position: relative;
+}
+.tagline {
+	display: none;
+}
+*/
+  
